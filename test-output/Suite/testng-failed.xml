@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="browser" value="Chrome"/>
+  <test name="IE_Browser(failed)">
+    <classes>
+      <class name="testCase.TestCaseForCreateNonIndiviualProviderAc">
+        <methods>
+          <include name="validLoginForNewAcCreate"/>
+          <include name="blankSubmit"/>
+        </methods>
+      </class> <!-- testCase.TestCaseForCreateNonIndiviualProviderAc -->
+      <class name="testCase.TestCaseForCreateMemberAcWithLogin">
+        <methods>
+          <include name="enterBlankDataIntoMemberAc"/>
+          <include name="navigateToAccountPage"/>
+          <include name="enterInvalidEmail"/>
+          <include name="createAMemberAcWithValidData"/>
+          <include name="enterInvalidDate"/>
+          <include name="enterInvalidSsn"/>
+          <include name="loginIntoApplication"/>
+        </methods>
+      </class> <!-- testCase.TestCaseForCreateMemberAcWithLogin -->
+      <class name="testCase.TestCaseForLogin">
+        <methods>
+          <include name="logIn"/>
+          <include name="logout"/>
+          <include name="tearDown"/>
+          <include name="validLogin"/>
+          <include name="verifyInvalidID"/>
+          <include name="verifyInvalidPassword"/>
+          <include name="verifyRemebarMeCheckBox"/>
+          <include name="verifyInvalidIDBlank"/>
+          <include name="verifyTitle"/>
+          <include name="openBrowser"/>
+        </methods>
+      </class> <!-- testCase.TestCaseForLogin -->
+      <class name="testCase.TestCaseForCreateIndiviualProviderAc">
+        <methods>
+          <include name="lastNameVerify"/>
+          <include name="createANewAcc"/>
+          <include name="validLoginForNewAcCreate"/>
+          <include name="blankSubmit"/>
+          <include name="EmailVerify"/>
+        </methods>
+      </class> <!-- testCase.TestCaseForCreateIndiviualProviderAc -->
+    </classes>
+  </test> <!-- IE_Browser(failed) -->
+  <test name="Chrome_Browser(failed)">
+    <classes>
+      <class name="testCase.TestCaseForCreateNonIndiviualProviderAc">
+        <methods>
+          <include name="validLoginForNewAcCreate"/>
+          <include name="blankSubmit"/>
+        </methods>
+      </class> <!-- testCase.TestCaseForCreateNonIndiviualProviderAc -->
+      <class name="testCase.TestCaseForCreateMemberAcWithLogin">
+        <methods>
+          <include name="enterBlankDataIntoMemberAc"/>
+          <include name="navigateToAccountPage"/>
+          <include name="enterInvalidEmail"/>
+          <include name="createAMemberAcWithValidData"/>
+          <include name="enterInvalidDate"/>
+          <include name="enterInvalidSsn"/>
+          <include name="loginIntoApplication"/>
+        </methods>
+      </class> <!-- testCase.TestCaseForCreateMemberAcWithLogin -->
+      <class name="testCase.TestCaseForLogin">
+        <methods>
+          <include name="logIn"/>
+          <include name="logout"/>
+          <include name="tearDown"/>
+          <include name="validLogin"/>
+          <include name="verifyInvalidID"/>
+          <include name="verifyInvalidPassword"/>
+          <include name="verifyRemebarMeCheckBox"/>
+          <include name="verifyInvalidIDBlank"/>
+          <include name="verifyTitle"/>
+          <include name="openBrowser"/>
+        </methods>
+      </class> <!-- testCase.TestCaseForLogin -->
+      <class name="testCase.TestCaseForCreateIndiviualProviderAc">
+        <methods>
+          <include name="lastNameVerify"/>
+          <include name="createANewAcc"/>
+          <include name="validLoginForNewAcCreate"/>
+          <include name="blankSubmit"/>
+          <include name="EmailVerify"/>
+        </methods>
+      </class> <!-- testCase.TestCaseForCreateIndiviualProviderAc -->
+    </classes>
+  </test> <!-- Chrome_Browser(failed) -->
+</suite> <!-- Failed suite [Suite] -->
