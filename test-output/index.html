@@ -23,7 +23,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -37,7 +37,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Suite">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -90,7 +90,31 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">60 methods,   60 passed</span>
+                    <span class="method-stats">66 methods, 3 failed,   63 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testCase.TestCaseForCreateNonIndiviualProviderAc" hash-for-method="blankSubmit">blankSubmit</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testCase.TestCaseForCreateNonIndiviualProviderAc" hash-for-method="blankSubmit">blankSubmit</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testCase.TestCaseForCreateNonIndiviualProviderAc" hash-for-method="blankSubmit">blankSubmit</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -311,7 +335,7 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testCase.TestCaseForCreateIndiviualProviderAc" hash-for-method="validLoginForNewAcCreate">validLoginForNewAcCreate</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testCase.TestCaseForCreateNonIndiviualProviderAc" hash-for-method="validLoginForNewAcCreate">validLoginForNewAcCreate</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -322,6 +346,21 @@
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testCase.TestCaseForCreateIndiviualProviderAc" hash-for-method="validLoginForNewAcCreate">validLoginForNewAcCreate</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testCase.TestCaseForCreateNonIndiviualProviderAc" hash-for-method="validLoginForNewAcCreate">validLoginForNewAcCreate</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testCase.TestCaseForCreateIndiviualProviderAc" hash-for-method="validLoginForNewAcCreate">validLoginForNewAcCreate</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testCase.TestCaseForCreateNonIndiviualProviderAc" hash-for-method="validLoginForNewAcCreate">validLoginForNewAcCreate</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -411,6 +450,142 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testCase.TestCaseForCreateNonIndiviualProviderAc</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="blankSubmit">
+                  </a> <!-- blankSubmit -->
+                  <span class="method-name">blankSubmit</span>
+                  <div class="stack-trace">java.lang.RuntimeException: Process refused to die after 10 seconds, and couldn&apos;t taskkill it: Unable to find executable for: taskkill
+	at org.openqa.selenium.os.ProcessUtils.killWinProcess(ProcessUtils.java:142)
+	at org.openqa.selenium.os.ProcessUtils.killProcess(ProcessUtils.java:81)
+	at org.openqa.selenium.os.UnixProcess$SeleniumWatchDog.destroyHarder(UnixProcess.java:247)
+	at org.openqa.selenium.os.UnixProcess$SeleniumWatchDog.access$2(UnixProcess.java:246)
+	at org.openqa.selenium.os.UnixProcess.destroy(UnixProcess.java:125)
+	at org.openqa.selenium.os.CommandLine.destroy(CommandLine.java:155)
+	at org.openqa.selenium.firefox.FirefoxBinary.quit(FirefoxBinary.java:259)
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.quit(NewProfileExtensionConnection.java:204)
+	at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.quit(FirefoxDriver.java:364)
+	at org.openqa.selenium.firefox.FirefoxDriver.stopClient(FirefoxDriver.java:310)
+	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:519)
+	at testCase.TestCaseForCreateNonIndiviualProviderAc.blankSubmit(TestCaseForCreateNonIndiviualProviderAc.java:48)
+Caused by: java.lang.NullPointerException: Unable to find executable for: taskkill
+	at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:250)
+	at org.openqa.selenium.os.UnixProcess.&lt;init&gt;(UnixProcess.java:62)
+	at org.openqa.selenium.os.CommandLine.&lt;init&gt;(CommandLine.java:38)
+	at org.openqa.selenium.os.WindowsUtils.killPID(WindowsUtils.java:178)
+	at org.openqa.selenium.os.ProcessUtils.killWinProcess(ProcessUtils.java:138)
+	... 35 more
+... Removed 24 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="blankSubmit">
+                  </a> <!-- blankSubmit -->
+                  <span class="method-name">blankSubmit</span>
+                  <div class="stack-trace">org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.48.2&apos;, revision: &apos;41bccdd&apos;, time: &apos;2015-10-09 19:55:52&apos;
+System info: host: &apos;01250LT2368&apos;, ip: &apos;10.8.44.138&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_60&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:641)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:670)
+	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:516)
+	at testCase.TestCaseForCreateNonIndiviualProviderAc.blankSubmit(TestCaseForCreateNonIndiviualProviderAc.java:48)
+Caused by: java.lang.RuntimeException: Process refused to die after 10 seconds, and couldn&apos;t taskkill it: Unable to find executable for: taskkill
+	at org.openqa.selenium.os.ProcessUtils.killWinProcess(ProcessUtils.java:142)
+	at org.openqa.selenium.os.ProcessUtils.killProcess(ProcessUtils.java:81)
+	at org.openqa.selenium.os.UnixProcess$SeleniumWatchDog.destroyHarder(UnixProcess.java:247)
+	at org.openqa.selenium.os.UnixProcess$SeleniumWatchDog.access$2(UnixProcess.java:246)
+	at org.openqa.selenium.os.UnixProcess.destroy(UnixProcess.java:125)
+	at org.openqa.selenium.os.CommandLine.destroy(CommandLine.java:155)
+	at org.openqa.selenium.remote.service.DriverService.stop(DriverService.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:94)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:620)
+	... 27 more
+Caused by: java.lang.NullPointerException: Unable to find executable for: taskkill
+	at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:250)
+	at org.openqa.selenium.os.UnixProcess.&lt;init&gt;(UnixProcess.java:62)
+	at org.openqa.selenium.os.CommandLine.&lt;init&gt;(CommandLine.java:38)
+	at org.openqa.selenium.os.WindowsUtils.killPID(WindowsUtils.java:178)
+	at org.openqa.selenium.os.ProcessUtils.killWinProcess(ProcessUtils.java:138)
+	... 35 more
+... Removed 24 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="blankSubmit">
+                  </a> <!-- blankSubmit -->
+                  <span class="method-name">blankSubmit</span>
+                  <div class="stack-trace">org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.48.2&apos;, revision: &apos;41bccdd&apos;, time: &apos;2015-10-09 19:55:52&apos;
+System info: host: &apos;01250LT2368&apos;, ip: &apos;10.8.44.138&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_60&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:641)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:670)
+	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:516)
+	at testCase.TestCaseForCreateNonIndiviualProviderAc.blankSubmit(TestCaseForCreateNonIndiviualProviderAc.java:48)
+Caused by: java.lang.RuntimeException: Process refused to die after 10 seconds, and couldn&apos;t taskkill it: Unable to find executable for: taskkill
+	at org.openqa.selenium.os.ProcessUtils.killWinProcess(ProcessUtils.java:142)
+	at org.openqa.selenium.os.ProcessUtils.killProcess(ProcessUtils.java:81)
+	at org.openqa.selenium.os.UnixProcess$SeleniumWatchDog.destroyHarder(UnixProcess.java:247)
+	at org.openqa.selenium.os.UnixProcess$SeleniumWatchDog.access$2(UnixProcess.java:246)
+	at org.openqa.selenium.os.UnixProcess.destroy(UnixProcess.java:125)
+	at org.openqa.selenium.os.CommandLine.destroy(CommandLine.java:155)
+	at org.openqa.selenium.remote.service.DriverService.stop(DriverService.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:94)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:620)
+	... 27 more
+Caused by: java.lang.NullPointerException: Unable to find executable for: taskkill
+	at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:250)
+	at org.openqa.selenium.os.UnixProcess.&lt;init&gt;(UnixProcess.java:62)
+	at org.openqa.selenium.os.CommandLine.&lt;init&gt;(CommandLine.java:38)
+	at org.openqa.selenium.os.WindowsUtils.killPID(WindowsUtils.java:178)
+	at org.openqa.selenium.os.ProcessUtils.killWinProcess(ProcessUtils.java:138)
+	... 35 more
+... Removed 24 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCase.TestCaseForCreateNonIndiviualProviderAc</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validLoginForNewAcCreate">
+                  </a> <!-- validLoginForNewAcCreate -->
+                  <span class="method-name">validLoginForNewAcCreate</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validLoginForNewAcCreate">
+                  </a> <!-- validLoginForNewAcCreate -->
+                  <span class="method-name">validLoginForNewAcCreate</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validLoginForNewAcCreate">
+                  </a> <!-- validLoginForNewAcCreate -->
+                  <span class="method-name">validLoginForNewAcCreate</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -865,26 +1040,31 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot;&gt;
-  &lt;parameter name=&quot;browser&quot; value=&quot;Chrome&quot;/&gt;
   &lt;test name=&quot;Test1&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;firefox&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;testCase.TestCaseForLogin&quot;/&gt;
       &lt;class name=&quot;testCase.TestCaseForCreateMemberAcWithLogin&quot;/&gt;
       &lt;class name=&quot;testCase.TestCaseForCreateIndiviualProviderAc&quot;/&gt;
+      &lt;class name=&quot;testCase.TestCaseForCreateNonIndiviualProviderAc&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test1 --&gt;
   &lt;test name=&quot;Test2&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;IE&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;testCase.TestCaseForLogin&quot;/&gt;
       &lt;class name=&quot;testCase.TestCaseForCreateMemberAcWithLogin&quot;/&gt;
       &lt;class name=&quot;testCase.TestCaseForCreateIndiviualProviderAc&quot;/&gt;
+      &lt;class name=&quot;testCase.TestCaseForCreateNonIndiviualProviderAc&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test2 --&gt;
   &lt;test name=&quot;Test3&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;testCase.TestCaseForLogin&quot;/&gt;
       &lt;class name=&quot;testCase.TestCaseForCreateMemberAcWithLogin&quot;/&gt;
       &lt;class name=&quot;testCase.TestCaseForCreateIndiviualProviderAc&quot;/&gt;
+      &lt;class name=&quot;testCase.TestCaseForCreateNonIndiviualProviderAc&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test3 --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -898,13 +1078,13 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test1 (3 classes)</span>
+                <span class="test-name">Test1 (4 classes)</span>
               </li>
               <li>
-                <span class="test-name">Test2 (3 classes)</span>
+                <span class="test-name">Test2 (4 classes)</span>
               </li>
               <li>
-                <span class="test-name">Test3 (3 classes)</span>
+                <span class="test-name">Test3 (4 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -930,252 +1110,276 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(60);
+data.addRows(66);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'logIn')
-data.setCell(0, 2, 'testCase.TestCaseForLogin')
-data.setCell(0, 3, 18076);
+data.setCell(0, 1, 'validLoginForNewAcCreate')
+data.setCell(0, 2, 'testCase.TestCaseForCreateIndiviualProviderAc')
+data.setCell(0, 3, 15343);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'validLoginForNewAcCreate')
-data.setCell(1, 2, 'testCase.TestCaseForCreateIndiviualProviderAc')
-data.setCell(1, 3, 11753);
+data.setCell(1, 2, 'testCase.TestCaseForCreateNonIndiviualProviderAc')
+data.setCell(1, 3, 15159);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'validLoginForNewAcCreate')
-data.setCell(2, 2, 'testCase.TestCaseForCreateIndiviualProviderAc')
-data.setCell(2, 3, 11200);
+data.setCell(2, 2, 'testCase.TestCaseForCreateNonIndiviualProviderAc')
+data.setCell(2, 3, 11480);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'validLoginForNewAcCreate')
-data.setCell(3, 2, 'testCase.TestCaseForCreateIndiviualProviderAc')
-data.setCell(3, 3, 10797);
+data.setCell(3, 1, 'logout')
+data.setCell(3, 2, 'testCase.TestCaseForLogin')
+data.setCell(3, 3, 11269);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'loginIntoApplication')
-data.setCell(4, 2, 'testCase.TestCaseForCreateMemberAcWithLogin')
-data.setCell(4, 3, 6187);
+data.setCell(4, 1, 'validLoginForNewAcCreate')
+data.setCell(4, 2, 'testCase.TestCaseForCreateIndiviualProviderAc')
+data.setCell(4, 3, 10954);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'loginIntoApplication')
-data.setCell(5, 2, 'testCase.TestCaseForCreateMemberAcWithLogin')
-data.setCell(5, 3, 6027);
+data.setCell(5, 1, 'validLoginForNewAcCreate')
+data.setCell(5, 2, 'testCase.TestCaseForCreateNonIndiviualProviderAc')
+data.setCell(5, 3, 10528);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'loginIntoApplication')
-data.setCell(6, 2, 'testCase.TestCaseForCreateMemberAcWithLogin')
-data.setCell(6, 3, 6001);
+data.setCell(6, 1, 'validLoginForNewAcCreate')
+data.setCell(6, 2, 'testCase.TestCaseForCreateIndiviualProviderAc')
+data.setCell(6, 3, 10395);
 data.setCell(7, 0, 7)
 data.setCell(7, 1, 'logIn')
 data.setCell(7, 2, 'testCase.TestCaseForLogin')
-data.setCell(7, 3, 5082);
+data.setCell(7, 3, 7842);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'logIn')
-data.setCell(8, 2, 'testCase.TestCaseForLogin')
-data.setCell(8, 3, 4937);
+data.setCell(8, 1, 'createAMemberAcWithValidData')
+data.setCell(8, 2, 'testCase.TestCaseForCreateMemberAcWithLogin')
+data.setCell(8, 3, 7112);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'verifyInvalidIDBlank')
-data.setCell(9, 2, 'testCase.TestCaseForLogin')
-data.setCell(9, 3, 4265);
+data.setCell(9, 1, 'loginIntoApplication')
+data.setCell(9, 2, 'testCase.TestCaseForCreateMemberAcWithLogin')
+data.setCell(9, 3, 6553);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'verifyInvalidIDBlank')
+data.setCell(10, 1, 'logIn')
 data.setCell(10, 2, 'testCase.TestCaseForLogin')
-data.setCell(10, 3, 3946);
+data.setCell(10, 3, 6380);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'createAMemberAcWithValidData')
+data.setCell(11, 1, 'loginIntoApplication')
 data.setCell(11, 2, 'testCase.TestCaseForCreateMemberAcWithLogin')
-data.setCell(11, 3, 3417);
+data.setCell(11, 3, 6296);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'verifyInvalidPassword')
-data.setCell(12, 2, 'testCase.TestCaseForLogin')
-data.setCell(12, 3, 3330);
+data.setCell(12, 1, 'createANewAcc')
+data.setCell(12, 2, 'testCase.TestCaseForCreateIndiviualProviderAc')
+data.setCell(12, 3, 6234);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'verifyInvalidPassword')
-data.setCell(13, 2, 'testCase.TestCaseForLogin')
-data.setCell(13, 3, 3118);
+data.setCell(13, 1, 'loginIntoApplication')
+data.setCell(13, 2, 'testCase.TestCaseForCreateMemberAcWithLogin')
+data.setCell(13, 3, 6186);
 data.setCell(14, 0, 14)
-data.setCell(14, 1, 'verifyInvalidPassword')
+data.setCell(14, 1, 'logIn')
 data.setCell(14, 2, 'testCase.TestCaseForLogin')
-data.setCell(14, 3, 2980);
+data.setCell(14, 3, 5723);
 data.setCell(15, 0, 15)
-data.setCell(15, 1, 'blankSubmit')
-data.setCell(15, 2, 'testCase.TestCaseForCreateIndiviualProviderAc')
-data.setCell(15, 3, 2892);
+data.setCell(15, 1, 'enterInvalidDate')
+data.setCell(15, 2, 'testCase.TestCaseForCreateMemberAcWithLogin')
+data.setCell(15, 3, 5183);
 data.setCell(16, 0, 16)
-data.setCell(16, 1, 'createAMemberAcWithValidData')
+data.setCell(16, 1, 'enterInvalidEmail')
 data.setCell(16, 2, 'testCase.TestCaseForCreateMemberAcWithLogin')
-data.setCell(16, 3, 2811);
+data.setCell(16, 3, 4709);
 data.setCell(17, 0, 17)
-data.setCell(17, 1, 'blankSubmit')
-data.setCell(17, 2, 'testCase.TestCaseForCreateIndiviualProviderAc')
-data.setCell(17, 3, 2784);
+data.setCell(17, 1, 'navigateToAccountPage')
+data.setCell(17, 2, 'testCase.TestCaseForCreateMemberAcWithLogin')
+data.setCell(17, 3, 4536);
 data.setCell(18, 0, 18)
-data.setCell(18, 1, 'verifyInvalidIDBlank')
-data.setCell(18, 2, 'testCase.TestCaseForLogin')
-data.setCell(18, 3, 2783);
+data.setCell(18, 1, 'blankSubmit')
+data.setCell(18, 2, 'testCase.TestCaseForCreateNonIndiviualProviderAc')
+data.setCell(18, 3, 4503);
 data.setCell(19, 0, 19)
 data.setCell(19, 1, 'blankSubmit')
-data.setCell(19, 2, 'testCase.TestCaseForCreateIndiviualProviderAc')
-data.setCell(19, 3, 2765);
+data.setCell(19, 2, 'testCase.TestCaseForCreateNonIndiviualProviderAc')
+data.setCell(19, 3, 4028);
 data.setCell(20, 0, 20)
-data.setCell(20, 1, 'createAMemberAcWithValidData')
-data.setCell(20, 2, 'testCase.TestCaseForCreateMemberAcWithLogin')
-data.setCell(20, 3, 2738);
+data.setCell(20, 1, 'verifyInvalidPassword')
+data.setCell(20, 2, 'testCase.TestCaseForLogin')
+data.setCell(20, 3, 3972);
 data.setCell(21, 0, 21)
-data.setCell(21, 1, 'verifyInvalidID')
-data.setCell(21, 2, 'testCase.TestCaseForLogin')
-data.setCell(21, 3, 2618);
+data.setCell(21, 1, 'EmailVerify')
+data.setCell(21, 2, 'testCase.TestCaseForCreateIndiviualProviderAc')
+data.setCell(21, 3, 3896);
 data.setCell(22, 0, 22)
-data.setCell(22, 1, 'verifyInvalidID')
-data.setCell(22, 2, 'testCase.TestCaseForLogin')
-data.setCell(22, 3, 2614);
+data.setCell(22, 1, 'enterInvalidSsn')
+data.setCell(22, 2, 'testCase.TestCaseForCreateMemberAcWithLogin')
+data.setCell(22, 3, 3815);
 data.setCell(23, 0, 23)
-data.setCell(23, 1, 'navigateToAccountPage')
-data.setCell(23, 2, 'testCase.TestCaseForCreateMemberAcWithLogin')
-data.setCell(23, 3, 2554);
+data.setCell(23, 1, 'verifyInvalidIDBlank')
+data.setCell(23, 2, 'testCase.TestCaseForLogin')
+data.setCell(23, 3, 3725);
 data.setCell(24, 0, 24)
-data.setCell(24, 1, 'createANewAcc')
-data.setCell(24, 2, 'testCase.TestCaseForCreateIndiviualProviderAc')
-data.setCell(24, 3, 2475);
+data.setCell(24, 1, 'createAMemberAcWithValidData')
+data.setCell(24, 2, 'testCase.TestCaseForCreateMemberAcWithLogin')
+data.setCell(24, 3, 3632);
 data.setCell(25, 0, 25)
-data.setCell(25, 1, 'verifyInvalidID')
-data.setCell(25, 2, 'testCase.TestCaseForLogin')
-data.setCell(25, 3, 2423);
+data.setCell(25, 1, 'blankSubmit')
+data.setCell(25, 2, 'testCase.TestCaseForCreateIndiviualProviderAc')
+data.setCell(25, 3, 3600);
 data.setCell(26, 0, 26)
-data.setCell(26, 1, 'createANewAcc')
-data.setCell(26, 2, 'testCase.TestCaseForCreateIndiviualProviderAc')
-data.setCell(26, 3, 2396);
+data.setCell(26, 1, 'verifyInvalidID')
+data.setCell(26, 2, 'testCase.TestCaseForLogin')
+data.setCell(26, 3, 3375);
 data.setCell(27, 0, 27)
-data.setCell(27, 1, 'navigateToAccountPage')
-data.setCell(27, 2, 'testCase.TestCaseForCreateMemberAcWithLogin')
-data.setCell(27, 3, 2174);
+data.setCell(27, 1, 'blankSubmit')
+data.setCell(27, 2, 'testCase.TestCaseForCreateIndiviualProviderAc')
+data.setCell(27, 3, 3285);
 data.setCell(28, 0, 28)
-data.setCell(28, 1, 'createANewAcc')
-data.setCell(28, 2, 'testCase.TestCaseForCreateIndiviualProviderAc')
-data.setCell(28, 3, 2130);
+data.setCell(28, 1, 'blankSubmit')
+data.setCell(28, 2, 'testCase.TestCaseForCreateNonIndiviualProviderAc')
+data.setCell(28, 3, 3233);
 data.setCell(29, 0, 29)
 data.setCell(29, 1, 'navigateToAccountPage')
 data.setCell(29, 2, 'testCase.TestCaseForCreateMemberAcWithLogin')
-data.setCell(29, 3, 2062);
+data.setCell(29, 3, 3226);
 data.setCell(30, 0, 30)
-data.setCell(30, 1, 'enterInvalidSsn')
-data.setCell(30, 2, 'testCase.TestCaseForCreateMemberAcWithLogin')
-data.setCell(30, 3, 1781);
+data.setCell(30, 1, 'verifyInvalidPassword')
+data.setCell(30, 2, 'testCase.TestCaseForLogin')
+data.setCell(30, 3, 3219);
 data.setCell(31, 0, 31)
-data.setCell(31, 1, 'enterInvalidDate')
+data.setCell(31, 1, 'enterInvalidSsn')
 data.setCell(31, 2, 'testCase.TestCaseForCreateMemberAcWithLogin')
-data.setCell(31, 3, 1769);
+data.setCell(31, 3, 3145);
 data.setCell(32, 0, 32)
-data.setCell(32, 1, 'enterInvalidDate')
-data.setCell(32, 2, 'testCase.TestCaseForCreateMemberAcWithLogin')
-data.setCell(32, 3, 1749);
+data.setCell(32, 1, 'verifyInvalidIDBlank')
+data.setCell(32, 2, 'testCase.TestCaseForLogin')
+data.setCell(32, 3, 2991);
 data.setCell(33, 0, 33)
-data.setCell(33, 1, 'enterInvalidEmail')
-data.setCell(33, 2, 'testCase.TestCaseForCreateMemberAcWithLogin')
-data.setCell(33, 3, 1666);
+data.setCell(33, 1, 'blankSubmit')
+data.setCell(33, 2, 'testCase.TestCaseForCreateIndiviualProviderAc')
+data.setCell(33, 3, 2948);
 data.setCell(34, 0, 34)
-data.setCell(34, 1, 'enterInvalidDate')
-data.setCell(34, 2, 'testCase.TestCaseForCreateMemberAcWithLogin')
-data.setCell(34, 3, 1550);
+data.setCell(34, 1, 'createANewAcc')
+data.setCell(34, 2, 'testCase.TestCaseForCreateIndiviualProviderAc')
+data.setCell(34, 3, 2873);
 data.setCell(35, 0, 35)
-data.setCell(35, 1, 'enterInvalidSsn')
-data.setCell(35, 2, 'testCase.TestCaseForCreateMemberAcWithLogin')
-data.setCell(35, 3, 1520);
+data.setCell(35, 1, 'lastNameVerify')
+data.setCell(35, 2, 'testCase.TestCaseForCreateIndiviualProviderAc')
+data.setCell(35, 3, 2764);
 data.setCell(36, 0, 36)
-data.setCell(36, 1, 'enterInvalidSsn')
+data.setCell(36, 1, 'createAMemberAcWithValidData')
 data.setCell(36, 2, 'testCase.TestCaseForCreateMemberAcWithLogin')
-data.setCell(36, 3, 1510);
+data.setCell(36, 3, 2697);
 data.setCell(37, 0, 37)
-data.setCell(37, 1, 'enterInvalidEmail')
+data.setCell(37, 1, 'navigateToAccountPage')
 data.setCell(37, 2, 'testCase.TestCaseForCreateMemberAcWithLogin')
-data.setCell(37, 3, 1508);
+data.setCell(37, 3, 2646);
 data.setCell(38, 0, 38)
-data.setCell(38, 1, 'enterInvalidEmail')
-data.setCell(38, 2, 'testCase.TestCaseForCreateMemberAcWithLogin')
-data.setCell(38, 3, 1481);
+data.setCell(38, 1, 'createANewAcc')
+data.setCell(38, 2, 'testCase.TestCaseForCreateIndiviualProviderAc')
+data.setCell(38, 3, 2308);
 data.setCell(39, 0, 39)
-data.setCell(39, 1, 'verifyRemebarMeCheckBox')
+data.setCell(39, 1, 'verifyInvalidID')
 data.setCell(39, 2, 'testCase.TestCaseForLogin')
-data.setCell(39, 3, 1266);
+data.setCell(39, 3, 2278);
 data.setCell(40, 0, 40)
-data.setCell(40, 1, 'enterBlankDataIntoMemberAc')
+data.setCell(40, 1, 'enterInvalidDate')
 data.setCell(40, 2, 'testCase.TestCaseForCreateMemberAcWithLogin')
-data.setCell(40, 3, 1229);
+data.setCell(40, 3, 2194);
 data.setCell(41, 0, 41)
-data.setCell(41, 1, 'verifyRemebarMeCheckBox')
-data.setCell(41, 2, 'testCase.TestCaseForLogin')
-data.setCell(41, 3, 1155);
+data.setCell(41, 1, 'enterBlankDataIntoMemberAc')
+data.setCell(41, 2, 'testCase.TestCaseForCreateMemberAcWithLogin')
+data.setCell(41, 3, 1963);
 data.setCell(42, 0, 42)
 data.setCell(42, 1, 'verifyRemebarMeCheckBox')
 data.setCell(42, 2, 'testCase.TestCaseForLogin')
-data.setCell(42, 3, 1143);
+data.setCell(42, 3, 1897);
 data.setCell(43, 0, 43)
-data.setCell(43, 1, 'EmailVerify')
-data.setCell(43, 2, 'testCase.TestCaseForCreateIndiviualProviderAc')
-data.setCell(43, 3, 1129);
+data.setCell(43, 1, 'validLogin')
+data.setCell(43, 2, 'testCase.TestCaseForLogin')
+data.setCell(43, 3, 1812);
 data.setCell(44, 0, 44)
-data.setCell(44, 1, 'enterBlankDataIntoMemberAc')
+data.setCell(44, 1, 'enterInvalidEmail')
 data.setCell(44, 2, 'testCase.TestCaseForCreateMemberAcWithLogin')
-data.setCell(44, 3, 1128);
+data.setCell(44, 3, 1720);
 data.setCell(45, 0, 45)
-data.setCell(45, 1, 'EmailVerify')
-data.setCell(45, 2, 'testCase.TestCaseForCreateIndiviualProviderAc')
-data.setCell(45, 3, 1087);
+data.setCell(45, 1, 'enterInvalidDate')
+data.setCell(45, 2, 'testCase.TestCaseForCreateMemberAcWithLogin')
+data.setCell(45, 3, 1632);
 data.setCell(46, 0, 46)
 data.setCell(46, 1, 'EmailVerify')
 data.setCell(46, 2, 'testCase.TestCaseForCreateIndiviualProviderAc')
-data.setCell(46, 3, 1084);
+data.setCell(46, 3, 1500);
 data.setCell(47, 0, 47)
-data.setCell(47, 1, 'lastNameVerify')
-data.setCell(47, 2, 'testCase.TestCaseForCreateIndiviualProviderAc')
-data.setCell(47, 3, 989);
+data.setCell(47, 1, 'enterBlankDataIntoMemberAc')
+data.setCell(47, 2, 'testCase.TestCaseForCreateMemberAcWithLogin')
+data.setCell(47, 3, 1476);
 data.setCell(48, 0, 48)
-data.setCell(48, 1, 'lastNameVerify')
-data.setCell(48, 2, 'testCase.TestCaseForCreateIndiviualProviderAc')
-data.setCell(48, 3, 970);
+data.setCell(48, 1, 'enterInvalidEmail')
+data.setCell(48, 2, 'testCase.TestCaseForCreateMemberAcWithLogin')
+data.setCell(48, 3, 1428);
 data.setCell(49, 0, 49)
-data.setCell(49, 1, 'enterBlankDataIntoMemberAc')
+data.setCell(49, 1, 'enterInvalidSsn')
 data.setCell(49, 2, 'testCase.TestCaseForCreateMemberAcWithLogin')
-data.setCell(49, 3, 948);
+data.setCell(49, 3, 1415);
 data.setCell(50, 0, 50)
-data.setCell(50, 1, 'lastNameVerify')
-data.setCell(50, 2, 'testCase.TestCaseForCreateIndiviualProviderAc')
-data.setCell(50, 3, 909);
+data.setCell(50, 1, 'enterBlankDataIntoMemberAc')
+data.setCell(50, 2, 'testCase.TestCaseForCreateMemberAcWithLogin')
+data.setCell(50, 3, 1309);
 data.setCell(51, 0, 51)
-data.setCell(51, 1, 'validLogin')
+data.setCell(51, 1, 'verifyInvalidIDBlank')
 data.setCell(51, 2, 'testCase.TestCaseForLogin')
-data.setCell(51, 3, 905);
+data.setCell(51, 3, 1205);
 data.setCell(52, 0, 52)
-data.setCell(52, 1, 'validLogin')
-data.setCell(52, 2, 'testCase.TestCaseForLogin')
-data.setCell(52, 3, 874);
+data.setCell(52, 1, 'lastNameVerify')
+data.setCell(52, 2, 'testCase.TestCaseForCreateIndiviualProviderAc')
+data.setCell(52, 3, 1153);
 data.setCell(53, 0, 53)
-data.setCell(53, 1, 'validLogin')
+data.setCell(53, 1, 'verifyRemebarMeCheckBox')
 data.setCell(53, 2, 'testCase.TestCaseForLogin')
-data.setCell(53, 3, 758);
+data.setCell(53, 3, 1142);
 data.setCell(54, 0, 54)
-data.setCell(54, 1, 'logout')
+data.setCell(54, 1, 'verifyInvalidPassword')
 data.setCell(54, 2, 'testCase.TestCaseForLogin')
-data.setCell(54, 3, 538);
+data.setCell(54, 3, 1132);
 data.setCell(55, 0, 55)
-data.setCell(55, 1, 'logout')
+data.setCell(55, 1, 'verifyRemebarMeCheckBox')
 data.setCell(55, 2, 'testCase.TestCaseForLogin')
-data.setCell(55, 3, 515);
+data.setCell(55, 3, 1066);
 data.setCell(56, 0, 56)
-data.setCell(56, 1, 'logout')
-data.setCell(56, 2, 'testCase.TestCaseForLogin')
-data.setCell(56, 3, 478);
+data.setCell(56, 1, 'EmailVerify')
+data.setCell(56, 2, 'testCase.TestCaseForCreateIndiviualProviderAc')
+data.setCell(56, 3, 1032);
 data.setCell(57, 0, 57)
-data.setCell(57, 1, 'verifyTitle')
+data.setCell(57, 1, 'verifyInvalidID')
 data.setCell(57, 2, 'testCase.TestCaseForLogin')
-data.setCell(57, 3, 246);
+data.setCell(57, 3, 963);
 data.setCell(58, 0, 58)
-data.setCell(58, 1, 'verifyTitle')
-data.setCell(58, 2, 'testCase.TestCaseForLogin')
-data.setCell(58, 3, 241);
+data.setCell(58, 1, 'lastNameVerify')
+data.setCell(58, 2, 'testCase.TestCaseForCreateIndiviualProviderAc')
+data.setCell(58, 3, 956);
 data.setCell(59, 0, 59)
-data.setCell(59, 1, 'verifyTitle')
+data.setCell(59, 1, 'validLogin')
 data.setCell(59, 2, 'testCase.TestCaseForLogin')
-data.setCell(59, 3, 221);
+data.setCell(59, 3, 743);
+data.setCell(60, 0, 60)
+data.setCell(60, 1, 'validLogin')
+data.setCell(60, 2, 'testCase.TestCaseForLogin')
+data.setCell(60, 3, 614);
+data.setCell(61, 0, 61)
+data.setCell(61, 1, 'logout')
+data.setCell(61, 2, 'testCase.TestCaseForLogin')
+data.setCell(61, 3, 559);
+data.setCell(62, 0, 62)
+data.setCell(62, 1, 'logout')
+data.setCell(62, 2, 'testCase.TestCaseForLogin')
+data.setCell(62, 3, 449);
+data.setCell(63, 0, 63)
+data.setCell(63, 1, 'verifyTitle')
+data.setCell(63, 2, 'testCase.TestCaseForLogin')
+data.setCell(63, 3, 297);
+data.setCell(64, 0, 64)
+data.setCell(64, 1, 'verifyTitle')
+data.setCell(64, 2, 'testCase.TestCaseForLogin')
+data.setCell(64, 3, 295);
+data.setCell(65, 0, 65)
+data.setCell(65, 1, 'verifyTitle')
+data.setCell(65, 2, 'testCase.TestCaseForLogin')
+data.setCell(65, 3, 242);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <span class="suite-total-time">Total running time: 4 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -1190,9 +1394,32 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">12 ignored methods</span>
+            <span class="header-content">27 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testCase.TestCaseForCreateNonIndiviualProviderAc</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+                <span class="ignored-method-name">openBrowser</span>
+                <br/>
+                <span class="ignored-method-name">openBrowser</span>
+                <br/>
+                <span class="ignored-method-name">openBrowser</span>
+                <br/>
+                <span class="ignored-method-name">reportIni</span>
+                <br/>
+                <span class="ignored-method-name">reportIni</span>
+                <br/>
+                <span class="ignored-method-name">reportIni</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
               <span class="ignored-class-name">testCase.TestCaseForCreateMemberAcWithLogin</span>
               <div class="ignored-methods-div">
@@ -1207,6 +1434,12 @@ return data;
                 <span class="ignored-method-name">openBrowser</span>
                 <br/>
                 <span class="ignored-method-name">openBrowser</span>
+                <br/>
+                <span class="ignored-method-name">reportIni</span>
+                <br/>
+                <span class="ignored-method-name">reportIni</span>
+                <br/>
+                <span class="ignored-method-name">reportIni</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -1225,6 +1458,12 @@ return data;
                 <br/>
                 <span class="ignored-method-name">openBrowser</span>
                 <br/>
+                <span class="ignored-method-name">reportIni</span>
+                <br/>
+                <span class="ignored-method-name">reportIni</span>
+                <br/>
+                <span class="ignored-method-name">reportIni</span>
+                <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -1237,281 +1476,330 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">testCase.TestCaseForLogin</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
-                <span class="method-name">openBrowser(Chrome)</span>
+                <span class="method-name">reportIni</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
+              <div class="configuration-test before">
+                <span class="method-name">openBrowser(firefox)</span>
+                <span class="method-start">116 ms</span>
+              </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">verifyInvalidIDBlank</span>
-                <span class="method-start">8796 ms</span>
+                <span class="method-start">8785 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verifyInvalidID</span>
-                <span class="method-start">11581 ms</span>
+                <span class="method-start">9991 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verifyInvalidPassword</span>
-                <span class="method-start">14200 ms</span>
+                <span class="method-start">10955 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">validLogin</span>
-                <span class="method-start">17181 ms</span>
+                <span class="method-start">12087 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verifyRemebarMeCheckBox</span>
-                <span class="method-start">17940 ms</span>
+                <span class="method-start">12701 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">logIn</span>
-                <span class="method-start">19083 ms</span>
+                <span class="method-start">13844 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verifyTitle</span>
-                <span class="method-start">37160 ms</span>
+                <span class="method-start">19568 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">logout</span>
-                <span class="method-start">37406 ms</span>
+                <span class="method-start">19810 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testCase.TestCaseForCreateMemberAcWithLogin</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">loginIntoApplication</span>
-                <span class="method-start">37923 ms</span>
+                <span class="method-start">20261 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">navigateToAccountPage</span>
-                <span class="method-start">44110 ms</span>
+                <span class="method-start">26448 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">enterBlankDataIntoMemberAc</span>
-                <span class="method-start">46664 ms</span>
+                <span class="method-start">29675 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">enterInvalidSsn</span>
-                <span class="method-start">47894 ms</span>
+                <span class="method-start">31152 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">enterInvalidDate</span>
-                <span class="method-start">49414 ms</span>
+                <span class="method-start">34298 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">enterInvalidEmail</span>
-                <span class="method-start">50964 ms</span>
+                <span class="method-start">36492 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">createAMemberAcWithValidData</span>
-                <span class="method-start">52473 ms</span>
+                <span class="method-start">38212 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testCase.TestCaseForCreateIndiviualProviderAc</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">validLoginForNewAcCreate</span>
-                <span class="method-start">55891 ms</span>
+                <span class="method-start">41844 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">blankSubmit</span>
-                <span class="method-start">66688 ms</span>
+                <span class="method-start">52239 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">lastNameVerify</span>
-                <span class="method-start">69581 ms</span>
+                <span class="method-start">55525 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">EmailVerify</span>
-                <span class="method-start">70551 ms</span>
+                <span class="method-start">56679 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">createANewAcc</span>
-                <span class="method-start">71635 ms</span>
+                <span class="method-start">58180 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCase.TestCaseForCreateNonIndiviualProviderAc</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">validLoginForNewAcCreate</span>
+                <span class="method-start">61054 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">blankSubmit</span>
+                <span class="method-start">71585 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testCase.TestCaseForLogin</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">openBrowser(IE)</span>
+                <span class="method-start">74836 ms</span>
+              </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">verifyInvalidIDBlank</span>
-                <span class="method-start">74079 ms</span>
+                <span class="method-start">80442 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verifyInvalidID</span>
-                <span class="method-start">78344 ms</span>
+                <span class="method-start">84168 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verifyInvalidPassword</span>
-                <span class="method-start">80768 ms</span>
+                <span class="method-start">87544 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">validLogin</span>
-                <span class="method-start">84099 ms</span>
+                <span class="method-start">91517 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verifyRemebarMeCheckBox</span>
-                <span class="method-start">84973 ms</span>
+                <span class="method-start">93330 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">logIn</span>
-                <span class="method-start">86129 ms</span>
+                <span class="method-start">95227 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verifyTitle</span>
-                <span class="method-start">91067 ms</span>
+                <span class="method-start">101607 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">logout</span>
-                <span class="method-start">91309 ms</span>
+                <span class="method-start">101903 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testCase.TestCaseForCreateMemberAcWithLogin</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">loginIntoApplication</span>
-                <span class="method-start">91848 ms</span>
+                <span class="method-start">113172 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">navigateToAccountPage</span>
-                <span class="method-start">97850 ms</span>
+                <span class="method-start">119725 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">enterBlankDataIntoMemberAc</span>
-                <span class="method-start">100025 ms</span>
+                <span class="method-start">124262 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">enterInvalidSsn</span>
-                <span class="method-start">100974 ms</span>
+                <span class="method-start">126226 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">enterInvalidDate</span>
-                <span class="method-start">102485 ms</span>
+                <span class="method-start">130042 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">enterInvalidEmail</span>
-                <span class="method-start">104254 ms</span>
+                <span class="method-start">135225 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">createAMemberAcWithValidData</span>
-                <span class="method-start">105735 ms</span>
+                <span class="method-start">139934 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testCase.TestCaseForCreateIndiviualProviderAc</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">validLoginForNewAcCreate</span>
-                <span class="method-start">108547 ms</span>
+                <span class="method-start">147046 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">blankSubmit</span>
-                <span class="method-start">119747 ms</span>
+                <span class="method-start">162389 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">lastNameVerify</span>
-                <span class="method-start">122531 ms</span>
+                <span class="method-start">165989 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">EmailVerify</span>
-                <span class="method-start">123441 ms</span>
+                <span class="method-start">168753 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">createANewAcc</span>
-                <span class="method-start">124529 ms</span>
+                <span class="method-start">172650 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCase.TestCaseForCreateNonIndiviualProviderAc</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">validLoginForNewAcCreate</span>
+                <span class="method-start">178885 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">blankSubmit</span>
+                <span class="method-start">194044 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testCase.TestCaseForLogin</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">openBrowser(chrome)</span>
+                <span class="method-start">198570 ms</span>
+              </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">verifyInvalidIDBlank</span>
-                <span class="method-start">126671 ms</span>
+                <span class="method-start">214075 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verifyInvalidID</span>
-                <span class="method-start">130618 ms</span>
+                <span class="method-start">217067 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verifyInvalidPassword</span>
-                <span class="method-start">133233 ms</span>
+                <span class="method-start">219345 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">validLogin</span>
-                <span class="method-start">136353 ms</span>
+                <span class="method-start">222564 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verifyRemebarMeCheckBox</span>
-                <span class="method-start">137259 ms</span>
+                <span class="method-start">223308 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">logIn</span>
-                <span class="method-start">138525 ms</span>
+                <span class="method-start">224374 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verifyTitle</span>
-                <span class="method-start">143607 ms</span>
+                <span class="method-start">232217 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">logout</span>
-                <span class="method-start">143829 ms</span>
+                <span class="method-start">232515 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testCase.TestCaseForCreateMemberAcWithLogin</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">loginIntoApplication</span>
-                <span class="method-start">144308 ms</span>
+                <span class="method-start">233075 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">navigateToAccountPage</span>
-                <span class="method-start">150336 ms</span>
+                <span class="method-start">239371 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">enterBlankDataIntoMemberAc</span>
-                <span class="method-start">152398 ms</span>
+                <span class="method-start">242017 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">enterInvalidSsn</span>
-                <span class="method-start">153526 ms</span>
+                <span class="method-start">243327 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">enterInvalidDate</span>
-                <span class="method-start">155308 ms</span>
+                <span class="method-start">244742 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">enterInvalidEmail</span>
-                <span class="method-start">157058 ms</span>
+                <span class="method-start">246374 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">createAMemberAcWithValidData</span>
-                <span class="method-start">158724 ms</span>
+                <span class="method-start">247803 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testCase.TestCaseForCreateIndiviualProviderAc</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">validLoginForNewAcCreate</span>
-                <span class="method-start">161463 ms</span>
+                <span class="method-start">250501 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">blankSubmit</span>
-                <span class="method-start">173216 ms</span>
+                <span class="method-start">261455 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">lastNameVerify</span>
-                <span class="method-start">175981 ms</span>
+                <span class="method-start">264404 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">EmailVerify</span>
-                <span class="method-start">176971 ms</span>
+                <span class="method-start">265361 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">createANewAcc</span>
-                <span class="method-start">178101 ms</span>
+                <span class="method-start">266393 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCase.TestCaseForCreateNonIndiviualProviderAc</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">validLoginForNewAcCreate</span>
+                <span class="method-start">268702 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">blankSubmit</span>
+                <span class="method-start">280183 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testCase.TestCaseForLogin</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">tearDown</span>
-                <span class="method-start">180587 ms</span>
+                <span class="method-start">284240 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

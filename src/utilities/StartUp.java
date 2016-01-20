@@ -11,6 +11,7 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 
@@ -35,8 +36,22 @@ public class StartUp {
 	
    
 	
-    @Parameters(value="browser")
 	@BeforeSuite
+	public void reportIni(){
+		extent.init(reportLocation + "Salesforce.html", true,
+				DisplayOrder.BY_OLDEST_TO_LATEST, GridType.STANDARD);
+		extent.config().documentTitle("Salesforce Test report in Browser");
+		extent.config()
+				.reportTitle(
+						"<h1><font color='#000099'>Salesforce Automation Test Result in browser</font></h1> <h4>1.Verify LogIn Screen(Positive,Negetive)</h4><h4>\n2.Member Account(Positive,Negetive).</h4><h4>\n2.Individual Provider Account(Positive,Negetive).</h4>");
+		extent.config()
+				.reportHeadline(
+						"<b>Salesforce Selenium Automation Test Report.Develop By:JAHED AKTHER</b>");
+	}
+	
+	
+    @Parameters(value="browser")
+	@BeforeTest
 	public void openBrowser( String browserName)  {
 	
 	   if(browserName.equalsIgnoreCase("firefox")){
@@ -47,10 +62,10 @@ public class StartUp {
 		        ieCapabilities.setCapability(InternetExplorerDriver.INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS, true);
 		        driver = new InternetExplorerDriver(ieCapabilities);
 			
-		}/*else if(browserName.equalsIgnoreCase("Chrome")){
+		}else if(browserName.equalsIgnoreCase("Chrome")){
 			System.setProperty("webdriver.chrome.driver", "C:\\Users\\jakther\\Desktop\\jahed\\java\\chromedriver\\chromedriver.exe");
 			driver = new ChromeDriver();
-		}*/
+		}
 	 			
 		
 	   extent.init(reportLocation + "Salesforce.html", true,
@@ -73,12 +88,15 @@ public class StartUp {
 		
 	}
 
+    
+    
+    
 	@AfterSuite
 	public void tearDown() {
-		//driver.close();
-		driver.get("C:\\Users\\jakther\\Desktop\\jahed\\javawork\\Report\\salesforce.html");
-		driver.manage().window().maximize();
-		driver.quit();
+		WebDriver driver1=new FirefoxDriver();
+		driver1.get("C:\\Users\\jakther\\Desktop\\jahed\\javawork\\Report\\salesforce.html");
+		driver1.manage().window().maximize();
+		//driver.quit();
 	}
 
 }
