@@ -1,7 +1,13 @@
 package testCase;
 
 
+import java.util.List;
+
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 import pageObject.CommonObjects;
@@ -13,16 +19,91 @@ public class TestingBetaVersion {
     
     
     public static void main(String[] args) throws InterruptedException {
-    	  SignInPage sign=new SignInPage(driver);
-    	  CommonObjects common=new CommonObjects(driver);
-    	driver=new FirefoxDriver();
+    	 System.setProperty("webdriver.chrome.driver", "C:\\Users\\jakther\\Desktop\\jahed\\java\\chromedriver\\chromedriver.exe");
+    	driver=new ChromeDriver();
     	driver.get("https://test.salesforce.com");
     	Thread.sleep(2000);
-    	sign.enterUserName("jakther@centerlight.org.qual");
-    	sign.enterPassword("06082003Tuba");
-        sign.clickOnSignIn();
-		//driver.findElement(By.id("username")).sendKeys("jakther@centerlight.org.qual");
-		//driver.findElement(By.id("password")).sendKeys("06082003Tuba");
+    	
+    	driver.findElement(By.id("username")).sendKeys("jakther@centerlight.org.qual");
+    	driver.findElement(By.id("password")).sendKeys("06082003Tuba");
+    	driver.findElement(By.id("Login")).click();
+    	Thread.sleep(2000);
+    	
+		driver.findElement(By.id("Account_Tab")).click();
+		Thread.sleep(2000);
+		
+		
+		//Thread.sleep(2000);
+		List<WebElement>list=driver.findElements(By.cssSelector(".dataCell>a"));
+		System.out.println(list.size());
+		for(int i=0;i<list.size();i++){
+			
+			WebElement ele=driver.findElement(By.xpath(".//*[@id='bodyCell']/div[3]/div[1]/div/div[2]/table/tbody/tr["+(i+2)+"]/th/a"));
+			System.out.println(ele.getText());
+			
+			
+			switch(ele.getText()){
+			case "MD J Akther":
+				ele.click();
+				//break;
+				Thread.sleep(2000);
+				driver.findElement(By.xpath(".//*[@id='topButtonRow']/input[4]")).click();
+				Thread.sleep(2000);
+				
+				 try {
+				        Alert alert = driver.switchTo().alert();
+				        alert.accept();
+				        Thread.sleep(2000);
+				           } catch (Exception e) {
+				    }
+				 break;
+			
+			case "Akther Nabil":
+				ele.click();
+				//break;
+				Thread.sleep(2000);
+				driver.findElement(By.xpath(".//*[@id='topButtonRow']/input[4]")).click();
+				Thread.sleep(2000);
+				
+				 try {
+				        Alert alert = driver.switchTo().alert();
+				        alert.accept();
+				        Thread.sleep(2000);
+				           } catch (Exception e) {
+				    }
+				 break;
+				 default:
+					 
+			}
+			
+			
+			
+			
+			
+		//	if(ele.getText().equalsIgnoreCase("Akther Nabil")||ele.getText().equalsIgnoreCase("MD J Akther")){
+				
+			//	ele.click();
+				/*//break;
+				Thread.sleep(2000);
+				driver.findElement(By.xpath(".//*[@id='topButtonRow']/input[4]")).click();
+				Thread.sleep(2000);
+				
+				 try {
+				        Alert alert = driver.switchTo().alert();
+				        alert.accept();
+				        Thread.sleep(2000);
+				        continue;
+				    } catch (Exception e) {
+				    }
+				*/
+				
+				
+				//driver.findElement(By.xpath("")).click();
+			//}
+			
+		}
+		
+		
 		//driver.findElement(By.id("Login")).click();
 
 	}

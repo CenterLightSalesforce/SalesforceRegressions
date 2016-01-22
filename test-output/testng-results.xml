@@ -1,80 +1,189 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="5" total="66" passed="61">
+<testng-results skipped="0" failed="7" total="66" passed="59">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="413731" started-at="2016-01-22T17:33:12Z" finished-at="2016-01-22T17:40:06Z">
+  <suite name="Suite" duration-ms="320223" started-at="2016-01-22T20:45:45Z" finished-at="2016-01-22T20:51:05Z">
     <groups>
     </groups>
-    <test name="Test1" duration-ms="164906" started-at="2016-01-22T17:33:12Z" finished-at="2016-01-22T17:35:57Z">
+    <test name="Test1" duration-ms="74104" started-at="2016-01-22T20:45:45Z" finished-at="2016-01-22T20:46:59Z">
       <class name="testCase.TestCaseForLogin">
-        <test-method status="PASS" signature="openBrowser(java.lang.String)[pri:0, instance:testCase.TestCaseForLogin@1b6a447]" name="openBrowser" is-config="true" duration-ms="8276" started-at="2016-01-22T12:33:12Z" finished-at="2016-01-22T12:33:21Z">
+        <test-method status="PASS" signature="openBrowser(java.lang.String)[pri:0, instance:testCase.TestCaseForLogin@1b6a447]" name="openBrowser" is-config="true" duration-ms="9606" started-at="2016-01-22T15:45:45Z" finished-at="2016-01-22T15:45:55Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[firefox]]>
+                <![CDATA[chrome]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="verifyInvalidIDBlank()[pri:0, instance:testCase.TestCaseForLogin@1b6a447]" name="verifyInvalidIDBlank" duration-ms="1284" started-at="2016-01-22T12:33:21Z" finished-at="2016-01-22T12:33:22Z">
+        <test-method status="PASS" signature="verifyInvalidIDBlank()[pri:0, instance:testCase.TestCaseForLogin@1b6a447]" name="verifyInvalidIDBlank" duration-ms="3054" started-at="2016-01-22T15:45:55Z" finished-at="2016-01-22T15:45:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyInvalidIDBlank -->
-        <test-method status="PASS" signature="verifyInvalidID()[pri:0, instance:testCase.TestCaseForLogin@1b6a447]" name="verifyInvalidID" duration-ms="974" started-at="2016-01-22T12:33:22Z" finished-at="2016-01-22T12:33:23Z">
+        <test-method status="PASS" signature="verifyInvalidID()[pri:0, instance:testCase.TestCaseForLogin@1b6a447]" name="verifyInvalidID" duration-ms="2647" started-at="2016-01-22T15:45:58Z" finished-at="2016-01-22T15:46:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyInvalidID -->
-        <test-method status="PASS" signature="verifyInvalidPassword()[pri:0, instance:testCase.TestCaseForLogin@1b6a447]" name="verifyInvalidPassword" duration-ms="1418" started-at="2016-01-22T12:33:23Z" finished-at="2016-01-22T12:33:24Z">
+        <test-method status="PASS" signature="verifyInvalidPassword()[pri:0, instance:testCase.TestCaseForLogin@1b6a447]" name="verifyInvalidPassword" duration-ms="3611" started-at="2016-01-22T15:46:00Z" finished-at="2016-01-22T15:46:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyInvalidPassword -->
-        <test-method status="PASS" signature="validLogin()[pri:0, instance:testCase.TestCaseForLogin@1b6a447]" name="validLogin" duration-ms="904" started-at="2016-01-22T12:33:24Z" finished-at="2016-01-22T12:33:25Z">
+        <test-method status="PASS" signature="validLogin()[pri:0, instance:testCase.TestCaseForLogin@1b6a447]" name="validLogin" duration-ms="811" started-at="2016-01-22T15:46:04Z" finished-at="2016-01-22T15:46:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validLogin -->
-        <test-method status="PASS" signature="verifyRemebarMeCheckBox()[pri:0, instance:testCase.TestCaseForLogin@1b6a447]" name="verifyRemebarMeCheckBox" duration-ms="1183" started-at="2016-01-22T12:33:25Z" finished-at="2016-01-22T12:33:26Z">
+        <test-method status="PASS" signature="verifyRemebarMeCheckBox()[pri:0, instance:testCase.TestCaseForLogin@1b6a447]" name="verifyRemebarMeCheckBox" duration-ms="1145" started-at="2016-01-22T15:46:05Z" finished-at="2016-01-22T15:46:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyRemebarMeCheckBox -->
-        <test-method status="PASS" signature="logIn()[pri:0, instance:testCase.TestCaseForLogin@1b6a447]" name="logIn" duration-ms="6642" started-at="2016-01-22T12:33:26Z" finished-at="2016-01-22T12:33:33Z">
+        <test-method status="PASS" signature="logIn()[pri:0, instance:testCase.TestCaseForLogin@1b6a447]" name="logIn" duration-ms="8152" started-at="2016-01-22T15:46:06Z" finished-at="2016-01-22T15:46:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logIn -->
-        <test-method status="PASS" signature="verifyTitle()[pri:0, instance:testCase.TestCaseForLogin@1b6a447]" name="verifyTitle" duration-ms="224" started-at="2016-01-22T12:33:33Z" finished-at="2016-01-22T12:33:33Z">
+        <test-method status="PASS" signature="verifyTitle()[pri:0, instance:testCase.TestCaseForLogin@1b6a447]" name="verifyTitle" duration-ms="255" started-at="2016-01-22T15:46:14Z" finished-at="2016-01-22T15:46:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyTitle -->
-        <test-method status="PASS" signature="logout()[pri:0, instance:testCase.TestCaseForLogin@1b6a447]" name="logout" duration-ms="494" started-at="2016-01-22T12:33:33Z" finished-at="2016-01-22T12:33:34Z">
+        <test-method status="PASS" signature="logout()[pri:0, instance:testCase.TestCaseForLogin@1b6a447]" name="logout" duration-ms="487" started-at="2016-01-22T15:46:14Z" finished-at="2016-01-22T15:46:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logout -->
       </class> <!-- testCase.TestCaseForLogin -->
       <class name="testCase.TestCaseForCreateIndiviualProviderAc">
-        <test-method status="FAIL" signature="validLoginForNewAcCreate()[pri:0, instance:testCase.TestCaseForCreateIndiviualProviderAc@115b42e]" name="validLoginForNewAcCreate" duration-ms="33575" started-at="2016-01-22T12:33:52Z" finished-at="2016-01-22T12:34:26Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method status="PASS" signature="validLoginForNewAcCreate()[pri:0, instance:testCase.TestCaseForCreateIndiviualProviderAc@115b42e]" name="validLoginForNewAcCreate" duration-ms="8274" started-at="2016-01-22T15:46:31Z" finished-at="2016-01-22T15:46:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validLoginForNewAcCreate -->
+        <test-method status="PASS" signature="blankSubmit()[pri:0, instance:testCase.TestCaseForCreateIndiviualProviderAc@115b42e]" name="blankSubmit" duration-ms="2817" started-at="2016-01-22T15:46:39Z" finished-at="2016-01-22T15:46:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- blankSubmit -->
+        <test-method status="PASS" signature="lastNameVerify()[pri:0, instance:testCase.TestCaseForCreateIndiviualProviderAc@115b42e]" name="lastNameVerify" duration-ms="1135" started-at="2016-01-22T15:46:42Z" finished-at="2016-01-22T15:46:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- lastNameVerify -->
+        <test-method status="PASS" signature="EmailVerify()[pri:0, instance:testCase.TestCaseForCreateIndiviualProviderAc@115b42e]" name="EmailVerify" duration-ms="1092" started-at="2016-01-22T15:46:43Z" finished-at="2016-01-22T15:46:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EmailVerify -->
+        <test-method status="PASS" signature="createANewAcc()[pri:0, instance:testCase.TestCaseForCreateIndiviualProviderAc@115b42e]" name="createANewAcc" duration-ms="2419" started-at="2016-01-22T15:46:44Z" finished-at="2016-01-22T15:46:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createANewAcc -->
+      </class> <!-- testCase.TestCaseForCreateIndiviualProviderAc -->
+      <class name="testCase.TestCaseForCreateMemberAcWithLogin">
+        <test-method status="PASS" signature="loginIntoApplication()[pri:0, instance:testCase.TestCaseForCreateMemberAcWithLogin@43840]" name="loginIntoApplication" duration-ms="2157" started-at="2016-01-22T15:46:15Z" finished-at="2016-01-22T15:46:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginIntoApplication -->
+        <test-method status="PASS" signature="navigateToAccountPage()[pri:0, instance:testCase.TestCaseForCreateMemberAcWithLogin@43840]" name="navigateToAccountPage" duration-ms="5227" started-at="2016-01-22T15:46:17Z" finished-at="2016-01-22T15:46:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToAccountPage -->
+        <test-method status="PASS" signature="enterBlankDataIntoMemberAc()[pri:0, instance:testCase.TestCaseForCreateMemberAcWithLogin@43840]" name="enterBlankDataIntoMemberAc" duration-ms="1229" started-at="2016-01-22T15:46:22Z" finished-at="2016-01-22T15:46:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterBlankDataIntoMemberAc -->
+        <test-method status="PASS" signature="enterInvalidSsn()[pri:0, instance:testCase.TestCaseForCreateMemberAcWithLogin@43840]" name="enterInvalidSsn" duration-ms="1565" started-at="2016-01-22T15:46:23Z" finished-at="2016-01-22T15:46:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterInvalidSsn -->
+        <test-method status="PASS" signature="enterInvalidDate()[pri:0, instance:testCase.TestCaseForCreateMemberAcWithLogin@43840]" name="enterInvalidDate" duration-ms="1556" started-at="2016-01-22T15:46:25Z" finished-at="2016-01-22T15:46:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterInvalidDate -->
+        <test-method status="PASS" signature="enterInvalidEmail()[pri:0, instance:testCase.TestCaseForCreateMemberAcWithLogin@43840]" name="enterInvalidEmail" duration-ms="1444" started-at="2016-01-22T15:46:26Z" finished-at="2016-01-22T15:46:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterInvalidEmail -->
+        <test-method status="PASS" signature="createAMemberAcWithValidData()[pri:0, instance:testCase.TestCaseForCreateMemberAcWithLogin@43840]" name="createAMemberAcWithValidData" duration-ms="2671" started-at="2016-01-22T15:46:28Z" finished-at="2016-01-22T15:46:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createAMemberAcWithValidData -->
+      </class> <!-- testCase.TestCaseForCreateMemberAcWithLogin -->
+      <class name="testCase.TestCaseForCreateNonIndiviualProviderAc">
+        <test-method status="PASS" signature="validLoginForNewAcCreate()[pri:0, instance:testCase.TestCaseForCreateNonIndiviualProviderAc@f9b8bc]" name="validLoginForNewAcCreate" duration-ms="8672" started-at="2016-01-22T15:46:46Z" finished-at="2016-01-22T15:46:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validLoginForNewAcCreate -->
+        <test-method status="PASS" signature="blankSubmit()[pri:0, instance:testCase.TestCaseForCreateNonIndiviualProviderAc@f9b8bc]" name="blankSubmit" duration-ms="4051" started-at="2016-01-22T15:46:55Z" finished-at="2016-01-22T15:46:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- blankSubmit -->
+      </class> <!-- testCase.TestCaseForCreateNonIndiviualProviderAc -->
+    </test> <!-- Test1 -->
+    <test name="Test2" duration-ms="155236" started-at="2016-01-22T20:46:59Z" finished-at="2016-01-22T20:49:34Z">
+      <class name="testCase.TestCaseForLogin">
+        <test-method status="PASS" signature="openBrowser(java.lang.String)[pri:0, instance:testCase.TestCaseForLogin@b7bfc0]" name="openBrowser" is-config="true" duration-ms="7202" started-at="2016-01-22T15:46:59Z" finished-at="2016-01-22T15:47:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[IE]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="verifyInvalidIDBlank()[pri:0, instance:testCase.TestCaseForLogin@b7bfc0]" name="verifyInvalidIDBlank" duration-ms="3533" started-at="2016-01-22T15:47:06Z" finished-at="2016-01-22T15:47:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyInvalidIDBlank -->
+        <test-method status="PASS" signature="verifyInvalidID()[pri:0, instance:testCase.TestCaseForLogin@b7bfc0]" name="verifyInvalidID" duration-ms="3708" started-at="2016-01-22T15:47:10Z" finished-at="2016-01-22T15:47:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyInvalidID -->
+        <test-method status="PASS" signature="verifyInvalidPassword()[pri:0, instance:testCase.TestCaseForLogin@b7bfc0]" name="verifyInvalidPassword" duration-ms="4827" started-at="2016-01-22T15:47:14Z" finished-at="2016-01-22T15:47:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyInvalidPassword -->
+        <test-method status="PASS" signature="validLogin()[pri:0, instance:testCase.TestCaseForLogin@b7bfc0]" name="validLogin" duration-ms="1922" started-at="2016-01-22T15:47:18Z" finished-at="2016-01-22T15:47:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validLogin -->
+        <test-method status="PASS" signature="verifyRemebarMeCheckBox()[pri:0, instance:testCase.TestCaseForLogin@b7bfc0]" name="verifyRemebarMeCheckBox" duration-ms="1819" started-at="2016-01-22T15:47:20Z" finished-at="2016-01-22T15:47:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRemebarMeCheckBox -->
+        <test-method status="PASS" signature="logIn()[pri:0, instance:testCase.TestCaseForLogin@b7bfc0]" name="logIn" duration-ms="6186" started-at="2016-01-22T15:47:22Z" finished-at="2016-01-22T15:47:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logIn -->
+        <test-method status="PASS" signature="verifyTitle()[pri:0, instance:testCase.TestCaseForLogin@b7bfc0]" name="verifyTitle" duration-ms="230" started-at="2016-01-22T15:47:28Z" finished-at="2016-01-22T15:47:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTitle -->
+        <test-method status="PASS" signature="logout()[pri:0, instance:testCase.TestCaseForLogin@b7bfc0]" name="logout" duration-ms="10490" started-at="2016-01-22T15:47:29Z" finished-at="2016-01-22T15:47:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+      </class> <!-- testCase.TestCaseForLogin -->
+      <class name="testCase.TestCaseForCreateIndiviualProviderAc">
+        <test-method status="FAIL" signature="validLoginForNewAcCreate()[pri:0, instance:testCase.TestCaseForCreateIndiviualProviderAc@1f97b55]" name="validLoginForNewAcCreate" duration-ms="4985" started-at="2016-01-22T15:48:29Z" finished-at="2016-01-22T15:48:34Z">
+          <exception class="org.openqa.selenium.InvalidSelectorException">
             <message>
-              <![CDATA[Unable to locate element: {"method":"xpath","selector":".//*[@id='hotlist']/table/tbody/tr/td[2]/input"}
-Command duration or timeout: 30.11 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+              <![CDATA[The xpath expression './/*[@id='Account_Tab']/a' cannot be evaluated or does notresult in a WebElement (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 2.34 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
 Build info: version: '2.48.2', revision: '41bccdd', time: '2015-10-09 19:55:52'
 System info: host: '01250LT2368', ip: '10.8.44.138', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_60'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=40.0.3, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 08efcc23-f822-417a-aab4-b62d15f84060
-*** Element info: {Using=xpath, value=.//*[@id='hotlist']/table/tbody/tr/td[2]/input}]]>
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, pageLoadStrategy=normal, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=11, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:14583/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=true, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: 38a2a201-c313-4787-b899-b712d1280ace
+*** Element info: {Using=xpath, value=.//*[@id='Account_Tab']/a}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":".//*[@id='hotlist']/table/tbody/tr/td[2]/input"}
-Command duration or timeout: 30.11 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+              <![CDATA[org.openqa.selenium.InvalidSelectorException: The xpath expression './/*[@id='Account_Tab']/a' cannot be evaluated or does notresult in a WebElement (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 2.34 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
 Build info: version: '2.48.2', revision: '41bccdd', time: '2015-10-09 19:55:52'
 System info: host: '01250LT2368', ip: '10.8.44.138', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_60'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=40.0.3, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 08efcc23-f822-417a-aab4-b62d15f84060
-*** Element info: {Using=xpath, value=.//*[@id='hotlist']/table/tbody/tr/td[2]/input}
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, pageLoadStrategy=normal, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=11, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:14583/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=true, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: 38a2a201-c313-4787-b899-b712d1280ace
+*** Element info: {Using=xpath, value=.//*[@id='Account_Tab']/a}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -86,7 +195,7 @@ Session ID: 08efcc23-f822-417a-aab4-b62d15f84060
 	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:490)
 	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:345)
-	at pageObject.NavigateToOtherPage.navigateToAccountCreatePage(NavigateToOtherPage.java:37)
+	at pageObject.NavigateToOtherPage.navigateToAccountCreatePage(NavigateToOtherPage.java:35)
 	at testCase.TestCaseForCreateIndiviualProviderAc.validLoginForNewAcCreate(TestCaseForCreateIndiviualProviderAc.java:25)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
@@ -112,41 +221,34 @@ Session ID: 08efcc23-f822-417a-aab4-b62d15f84060
 	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":".//*[@id='hotlist']/table/tbody/tr/td[2]/input"}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.48.2', revision: '41bccdd', time: '2015-10-09 19:55:52'
-System info: host: '01250LT2368', ip: '10.8.44.138', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_60'
-Driver info: driver.version: unknown
-	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/jakther/AppData/Local/Temp/anonymous8542792990824281469webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10659)
-	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///C:/Users/jakther/AppData/Local/Temp/anonymous8542792990824281469webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:621)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.InvalidSelectorException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validLoginForNewAcCreate -->
-        <test-method status="FAIL" signature="blankSubmit()[pri:0, instance:testCase.TestCaseForCreateIndiviualProviderAc@115b42e]" name="blankSubmit" duration-ms="30083" started-at="2016-01-22T12:34:26Z" finished-at="2016-01-22T12:34:56Z">
+        <test-method status="FAIL" signature="blankSubmit()[pri:0, instance:testCase.TestCaseForCreateIndiviualProviderAc@1f97b55]" name="blankSubmit" duration-ms="30116" started-at="2016-01-22T15:48:34Z" finished-at="2016-01-22T15:49:04Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[Unable to locate element: {"method":"xpath","selector":".//*[@id='topButtonRow']/input[1]"}
-Command duration or timeout: 30.07 seconds
+              <![CDATA[Unable to find element with xpath == .//*[@id='topButtonRow']/input[1] (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 30.10 seconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.48.2', revision: '41bccdd', time: '2015-10-09 19:55:52'
 System info: host: '01250LT2368', ip: '10.8.44.138', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_60'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=40.0.3, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 08efcc23-f822-417a-aab4-b62d15f84060
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, pageLoadStrategy=normal, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=11, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:14583/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=true, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: 38a2a201-c313-4787-b899-b712d1280ace
 *** Element info: {Using=xpath, value=.//*[@id='topButtonRow']/input[1]}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":".//*[@id='topButtonRow']/input[1]"}
-Command duration or timeout: 30.07 seconds
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to find element with xpath == .//*[@id='topButtonRow']/input[1] (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 30.10 seconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.48.2', revision: '41bccdd', time: '2015-10-09 19:55:52'
 System info: host: '01250LT2368', ip: '10.8.44.138', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_60'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=40.0.3, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 08efcc23-f822-417a-aab4-b62d15f84060
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, pageLoadStrategy=normal, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=11, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:14583/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=true, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: 38a2a201-c313-4787-b899-b712d1280ace
 *** Element info: {Using=xpath, value=.//*[@id='topButtonRow']/input[1]}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
@@ -185,41 +287,34 @@ Session ID: 08efcc23-f822-417a-aab4-b62d15f84060
 	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":".//*[@id='topButtonRow']/input[1]"}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.48.2', revision: '41bccdd', time: '2015-10-09 19:55:52'
-System info: host: '01250LT2368', ip: '10.8.44.138', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_60'
-Driver info: driver.version: unknown
-	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/jakther/AppData/Local/Temp/anonymous8542792990824281469webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10659)
-	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///C:/Users/jakther/AppData/Local/Temp/anonymous8542792990824281469webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:621)
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- blankSubmit -->
-        <test-method status="FAIL" signature="lastNameVerify()[pri:0, instance:testCase.TestCaseForCreateIndiviualProviderAc@115b42e]" name="lastNameVerify" duration-ms="30094" started-at="2016-01-22T12:34:56Z" finished-at="2016-01-22T12:35:26Z">
+        <test-method status="FAIL" signature="lastNameVerify()[pri:0, instance:testCase.TestCaseForCreateIndiviualProviderAc@1f97b55]" name="lastNameVerify" duration-ms="30154" started-at="2016-01-22T15:49:04Z" finished-at="2016-01-22T15:49:34Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[Unable to locate element: {"method":"id","selector":"00NF000000ColTt"}
-Command duration or timeout: 30.07 seconds
+              <![CDATA[Unable to find element with id == 00NF000000ColTt (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 30.14 seconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.48.2', revision: '41bccdd', time: '2015-10-09 19:55:52'
 System info: host: '01250LT2368', ip: '10.8.44.138', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_60'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=40.0.3, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 08efcc23-f822-417a-aab4-b62d15f84060
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, pageLoadStrategy=normal, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=11, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:14583/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=true, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: 38a2a201-c313-4787-b899-b712d1280ace
 *** Element info: {Using=id, value=00NF000000ColTt}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"id","selector":"00NF000000ColTt"}
-Command duration or timeout: 30.07 seconds
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to find element with id == 00NF000000ColTt (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 30.14 seconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.48.2', revision: '41bccdd', time: '2015-10-09 19:55:52'
 System info: host: '01250LT2368', ip: '10.8.44.138', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_60'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=40.0.3, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 08efcc23-f822-417a-aab4-b62d15f84060
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, pageLoadStrategy=normal, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=11, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:14583/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=true, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: 38a2a201-c313-4787-b899-b712d1280ace
 *** Element info: {Using=id, value=00NF000000ColTt}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
@@ -258,191 +353,33 @@ Session ID: 08efcc23-f822-417a-aab4-b62d15f84060
 	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"id","selector":"00NF000000ColTt"}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.48.2', revision: '41bccdd', time: '2015-10-09 19:55:52'
-System info: host: '01250LT2368', ip: '10.8.44.138', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_60'
-Driver info: driver.version: unknown
-	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/jakther/AppData/Local/Temp/anonymous8542792990824281469webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10659)
-	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///C:/Users/jakther/AppData/Local/Temp/anonymous8542792990824281469webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:621)
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- lastNameVerify -->
-        <test-method status="PASS" signature="EmailVerify()[pri:0, instance:testCase.TestCaseForCreateIndiviualProviderAc@115b42e]" name="EmailVerify" duration-ms="16621" started-at="2016-01-22T12:35:26Z" finished-at="2016-01-22T12:35:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- EmailVerify -->
-        <test-method status="PASS" signature="createANewAcc()[pri:0, instance:testCase.TestCaseForCreateIndiviualProviderAc@115b42e]" name="createANewAcc" duration-ms="2788" started-at="2016-01-22T12:35:43Z" finished-at="2016-01-22T12:35:45Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createANewAcc -->
-      </class> <!-- testCase.TestCaseForCreateIndiviualProviderAc -->
-      <class name="testCase.TestCaseForCreateMemberAcWithLogin">
-        <test-method status="PASS" signature="loginIntoApplication()[pri:0, instance:testCase.TestCaseForCreateMemberAcWithLogin@43840]" name="loginIntoApplication" duration-ms="1927" started-at="2016-01-22T12:33:34Z" finished-at="2016-01-22T12:33:36Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginIntoApplication -->
-        <test-method status="PASS" signature="navigateToAccountPage()[pri:0, instance:testCase.TestCaseForCreateMemberAcWithLogin@43840]" name="navigateToAccountPage" duration-ms="5138" started-at="2016-01-22T12:33:36Z" finished-at="2016-01-22T12:33:41Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- navigateToAccountPage -->
-        <test-method status="PASS" signature="enterBlankDataIntoMemberAc()[pri:0, instance:testCase.TestCaseForCreateMemberAcWithLogin@43840]" name="enterBlankDataIntoMemberAc" duration-ms="2356" started-at="2016-01-22T12:33:41Z" finished-at="2016-01-22T12:33:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- enterBlankDataIntoMemberAc -->
-        <test-method status="PASS" signature="enterInvalidSsn()[pri:0, instance:testCase.TestCaseForCreateMemberAcWithLogin@43840]" name="enterInvalidSsn" duration-ms="1656" started-at="2016-01-22T12:33:43Z" finished-at="2016-01-22T12:33:45Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- enterInvalidSsn -->
-        <test-method status="PASS" signature="enterInvalidDate()[pri:0, instance:testCase.TestCaseForCreateMemberAcWithLogin@43840]" name="enterInvalidDate" duration-ms="1893" started-at="2016-01-22T12:33:45Z" finished-at="2016-01-22T12:33:47Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- enterInvalidDate -->
-        <test-method status="PASS" signature="enterInvalidEmail()[pri:0, instance:testCase.TestCaseForCreateMemberAcWithLogin@43840]" name="enterInvalidEmail" duration-ms="1935" started-at="2016-01-22T12:33:47Z" finished-at="2016-01-22T12:33:49Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- enterInvalidEmail -->
-        <test-method status="PASS" signature="createAMemberAcWithValidData()[pri:0, instance:testCase.TestCaseForCreateMemberAcWithLogin@43840]" name="createAMemberAcWithValidData" duration-ms="3493" started-at="2016-01-22T12:33:49Z" finished-at="2016-01-22T12:33:52Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createAMemberAcWithValidData -->
-      </class> <!-- testCase.TestCaseForCreateMemberAcWithLogin -->
-      <class name="testCase.TestCaseForCreateNonIndiviualProviderAc">
-        <test-method status="PASS" signature="validLoginForNewAcCreate()[pri:0, instance:testCase.TestCaseForCreateNonIndiviualProviderAc@f9b8bc]" name="validLoginForNewAcCreate" duration-ms="8647" started-at="2016-01-22T12:35:45Z" finished-at="2016-01-22T12:35:54Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validLoginForNewAcCreate -->
-        <test-method status="PASS" signature="blankSubmit()[pri:0, instance:testCase.TestCaseForCreateNonIndiviualProviderAc@f9b8bc]" name="blankSubmit" duration-ms="3250" started-at="2016-01-22T12:35:54Z" finished-at="2016-01-22T12:35:57Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- blankSubmit -->
-      </class> <!-- testCase.TestCaseForCreateNonIndiviualProviderAc -->
-    </test> <!-- Test1 -->
-    <test name="Test2" duration-ms="178113" started-at="2016-01-22T17:35:57Z" finished-at="2016-01-22T17:38:55Z">
-      <class name="testCase.TestCaseForLogin">
-        <test-method status="PASS" signature="openBrowser(java.lang.String)[pri:0, instance:testCase.TestCaseForLogin@b7bfc0]" name="openBrowser" is-config="true" duration-ms="5398" started-at="2016-01-22T12:35:57Z" finished-at="2016-01-22T12:36:03Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[IE]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="verifyInvalidIDBlank()[pri:0, instance:testCase.TestCaseForLogin@b7bfc0]" name="verifyInvalidIDBlank" duration-ms="3636" started-at="2016-01-22T12:36:03Z" finished-at="2016-01-22T12:36:06Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyInvalidIDBlank -->
-        <test-method status="PASS" signature="verifyInvalidID()[pri:0, instance:testCase.TestCaseForLogin@b7bfc0]" name="verifyInvalidID" duration-ms="4518" started-at="2016-01-22T12:36:06Z" finished-at="2016-01-22T12:36:11Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyInvalidID -->
-        <test-method status="PASS" signature="verifyInvalidPassword()[pri:0, instance:testCase.TestCaseForLogin@b7bfc0]" name="verifyInvalidPassword" duration-ms="5700" started-at="2016-01-22T12:36:11Z" finished-at="2016-01-22T12:36:17Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyInvalidPassword -->
-        <test-method status="PASS" signature="validLogin()[pri:0, instance:testCase.TestCaseForLogin@b7bfc0]" name="validLogin" duration-ms="3243" started-at="2016-01-22T12:36:17Z" finished-at="2016-01-22T12:36:20Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validLogin -->
-        <test-method status="PASS" signature="verifyRemebarMeCheckBox()[pri:0, instance:testCase.TestCaseForLogin@b7bfc0]" name="verifyRemebarMeCheckBox" duration-ms="2429" started-at="2016-01-22T12:36:20Z" finished-at="2016-01-22T12:36:22Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyRemebarMeCheckBox -->
-        <test-method status="PASS" signature="logIn()[pri:0, instance:testCase.TestCaseForLogin@b7bfc0]" name="logIn" duration-ms="6571" started-at="2016-01-22T12:36:22Z" finished-at="2016-01-22T12:36:29Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logIn -->
-        <test-method status="PASS" signature="verifyTitle()[pri:0, instance:testCase.TestCaseForLogin@b7bfc0]" name="verifyTitle" duration-ms="380" started-at="2016-01-22T12:36:29Z" finished-at="2016-01-22T12:36:29Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyTitle -->
-        <test-method status="PASS" signature="logout()[pri:0, instance:testCase.TestCaseForLogin@b7bfc0]" name="logout" duration-ms="10609" started-at="2016-01-22T12:36:29Z" finished-at="2016-01-22T12:36:40Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logout -->
-      </class> <!-- testCase.TestCaseForLogin -->
-      <class name="testCase.TestCaseForCreateIndiviualProviderAc">
-        <test-method status="PASS" signature="validLoginForNewAcCreate()[pri:0, instance:testCase.TestCaseForCreateIndiviualProviderAc@1f97b55]" name="validLoginForNewAcCreate" duration-ms="13626" started-at="2016-01-22T12:37:42Z" finished-at="2016-01-22T12:37:56Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validLoginForNewAcCreate -->
-        <test-method status="PASS" signature="blankSubmit()[pri:0, instance:testCase.TestCaseForCreateIndiviualProviderAc@1f97b55]" name="blankSubmit" duration-ms="3956" started-at="2016-01-22T12:37:56Z" finished-at="2016-01-22T12:38:00Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- blankSubmit -->
-        <test-method status="PASS" signature="lastNameVerify()[pri:0, instance:testCase.TestCaseForCreateIndiviualProviderAc@1f97b55]" name="lastNameVerify" duration-ms="4312" started-at="2016-01-22T12:38:00Z" finished-at="2016-01-22T12:38:04Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- lastNameVerify -->
-        <test-method status="PASS" signature="EmailVerify()[pri:0, instance:testCase.TestCaseForCreateIndiviualProviderAc@1f97b55]" name="EmailVerify" duration-ms="6427" started-at="2016-01-22T12:38:04Z" finished-at="2016-01-22T12:38:11Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- EmailVerify -->
-        <test-method status="PASS" signature="createANewAcc()[pri:0, instance:testCase.TestCaseForCreateIndiviualProviderAc@1f97b55]" name="createANewAcc" duration-ms="9455" started-at="2016-01-22T12:38:11Z" finished-at="2016-01-22T12:38:20Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createANewAcc -->
-      </class> <!-- testCase.TestCaseForCreateIndiviualProviderAc -->
-      <class name="testCase.TestCaseForCreateMemberAcWithLogin">
-        <test-method status="PASS" signature="loginIntoApplication()[pri:0, instance:testCase.TestCaseForCreateMemberAcWithLogin@6e2eef]" name="loginIntoApplication" duration-ms="17040" started-at="2016-01-22T12:36:40Z" finished-at="2016-01-22T12:36:57Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginIntoApplication -->
-        <test-method status="PASS" signature="navigateToAccountPage()[pri:0, instance:testCase.TestCaseForCreateMemberAcWithLogin@6e2eef]" name="navigateToAccountPage" duration-ms="4799" started-at="2016-01-22T12:36:57Z" finished-at="2016-01-22T12:37:02Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- navigateToAccountPage -->
-        <test-method status="PASS" signature="enterBlankDataIntoMemberAc()[pri:0, instance:testCase.TestCaseForCreateMemberAcWithLogin@6e2eef]" name="enterBlankDataIntoMemberAc" duration-ms="2405" started-at="2016-01-22T12:37:02Z" finished-at="2016-01-22T12:37:04Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- enterBlankDataIntoMemberAc -->
-        <test-method status="PASS" signature="enterInvalidSsn()[pri:0, instance:testCase.TestCaseForCreateMemberAcWithLogin@6e2eef]" name="enterInvalidSsn" duration-ms="6969" started-at="2016-01-22T12:37:04Z" finished-at="2016-01-22T12:37:11Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- enterInvalidSsn -->
-        <test-method status="PASS" signature="enterInvalidDate()[pri:0, instance:testCase.TestCaseForCreateMemberAcWithLogin@6e2eef]" name="enterInvalidDate" duration-ms="9800" started-at="2016-01-22T12:37:11Z" finished-at="2016-01-22T12:37:21Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- enterInvalidDate -->
-        <test-method status="PASS" signature="enterInvalidEmail()[pri:0, instance:testCase.TestCaseForCreateMemberAcWithLogin@6e2eef]" name="enterInvalidEmail" duration-ms="9318" started-at="2016-01-22T12:37:21Z" finished-at="2016-01-22T12:37:30Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- enterInvalidEmail -->
-        <test-method status="PASS" signature="createAMemberAcWithValidData()[pri:0, instance:testCase.TestCaseForCreateMemberAcWithLogin@6e2eef]" name="createAMemberAcWithValidData" duration-ms="12197" started-at="2016-01-22T12:37:30Z" finished-at="2016-01-22T12:37:42Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createAMemberAcWithValidData -->
-      </class> <!-- testCase.TestCaseForCreateMemberAcWithLogin -->
-      <class name="testCase.TestCaseForCreateNonIndiviualProviderAc">
-        <test-method status="FAIL" signature="validLoginForNewAcCreate()[pri:0, instance:testCase.TestCaseForCreateNonIndiviualProviderAc@bbc1e0]" name="validLoginForNewAcCreate" duration-ms="5052" started-at="2016-01-22T12:38:20Z" finished-at="2016-01-22T12:38:25Z">
-          <exception class="org.openqa.selenium.InvalidSelectorException">
+        <test-method status="FAIL" signature="EmailVerify()[pri:0, instance:testCase.TestCaseForCreateIndiviualProviderAc@1f97b55]" name="EmailVerify" duration-ms="30" started-at="2016-01-22T15:49:34Z" finished-at="2016-01-22T15:49:34Z">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
             <message>
-              <![CDATA[The xpath expression './/*[@id='Account_Tab']/a' cannot be evaluated or does notresult in a WebElement (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 2.38 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+              <![CDATA[Unable to find element on closed window (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 11 milliseconds
 Build info: version: '2.48.2', revision: '41bccdd', time: '2015-10-09 19:55:52'
 System info: host: '01250LT2368', ip: '10.8.44.138', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_60'
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, pageLoadStrategy=normal, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=11, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:17130/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=true, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
-Session ID: fefca2af-ef2a-489d-8701-0560d7b39084
-*** Element info: {Using=xpath, value=.//*[@id='Account_Tab']/a}]]>
+Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, pageLoadStrategy=normal, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=11, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:14583/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=true, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: 38a2a201-c313-4787-b899-b712d1280ace
+*** Element info: {Using=id, value=00NF000000ColTt}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.InvalidSelectorException: The xpath expression './/*[@id='Account_Tab']/a' cannot be evaluated or does notresult in a WebElement (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 2.38 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: Unable to find element on closed window (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 11 milliseconds
 Build info: version: '2.48.2', revision: '41bccdd', time: '2015-10-09 19:55:52'
 System info: host: '01250LT2368', ip: '10.8.44.138', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_60'
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, pageLoadStrategy=normal, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=11, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:17130/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=true, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
-Session ID: fefca2af-ef2a-489d-8701-0560d7b39084
-*** Element info: {Using=xpath, value=.//*[@id='Account_Tab']/a}
+Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, pageLoadStrategy=normal, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=11, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:14583/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=true, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: 38a2a201-c313-4787-b899-b712d1280ace
+*** Element info: {Using=id, value=00NF000000ColTt}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -451,11 +388,11 @@ Session ID: fefca2af-ef2a-489d-8701-0560d7b39084
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:647)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:490)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:403)
+	at org.openqa.selenium.By$ById.findElement(By.java:218)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:345)
-	at pageObject.NavigateToOtherPage.navigateToAccountCreatePage(NavigateToOtherPage.java:35)
-	at testCase.TestCaseForCreateNonIndiviualProviderAc.validLoginForNewAcCreate(TestCaseForCreateNonIndiviualProviderAc.java:20)
+	at pageObject.CreateIndividualProviderAccount.clearTextAllBox(CreateIndividualProviderAccount.java:305)
+	at testCase.TestCaseForCreateIndiviualProviderAc.EmailVerify(TestCaseForCreateIndiviualProviderAc.java:80)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -482,32 +419,191 @@ Session ID: fefca2af-ef2a-489d-8701-0560d7b39084
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.InvalidSelectorException -->
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EmailVerify -->
+        <test-method status="FAIL" signature="createANewAcc()[pri:0, instance:testCase.TestCaseForCreateIndiviualProviderAc@1f97b55]" name="createANewAcc" duration-ms="92" started-at="2016-01-22T15:49:34Z" finished-at="2016-01-22T15:49:34Z">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+            <message>
+              <![CDATA[Unable to find element on closed window (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 11 milliseconds
+Build info: version: '2.48.2', revision: '41bccdd', time: '2015-10-09 19:55:52'
+System info: host: '01250LT2368', ip: '10.8.44.138', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_60'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, pageLoadStrategy=normal, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=11, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:14583/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=true, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: 38a2a201-c313-4787-b899-b712d1280ace
+*** Element info: {Using=id, value=00NF000000ColTt}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: Unable to find element on closed window (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 11 milliseconds
+Build info: version: '2.48.2', revision: '41bccdd', time: '2015-10-09 19:55:52'
+System info: host: '01250LT2368', ip: '10.8.44.138', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_60'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, pageLoadStrategy=normal, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=11, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:14583/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=true, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: 38a2a201-c313-4787-b899-b712d1280ace
+*** Element info: {Using=id, value=00NF000000ColTt}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:647)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:403)
+	at org.openqa.selenium.By$ById.findElement(By.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:345)
+	at pageObject.CreateIndividualProviderAccount.clearTextAllBox(CreateIndividualProviderAccount.java:305)
+	at testCase.TestCaseForCreateIndiviualProviderAc.createANewAcc(TestCaseForCreateIndiviualProviderAc.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:821)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:773)
+	at org.testng.TestRunner.run(TestRunner.java:623)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1185)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1110)
+	at org.testng.TestNG.run(TestNG.java:1018)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createANewAcc -->
+      </class> <!-- testCase.TestCaseForCreateIndiviualProviderAc -->
+      <class name="testCase.TestCaseForCreateMemberAcWithLogin">
+        <test-method status="PASS" signature="loginIntoApplication()[pri:0, instance:testCase.TestCaseForCreateMemberAcWithLogin@6e2eef]" name="loginIntoApplication" duration-ms="17283" started-at="2016-01-22T15:47:39Z" finished-at="2016-01-22T15:47:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginIntoApplication -->
+        <test-method status="PASS" signature="navigateToAccountPage()[pri:0, instance:testCase.TestCaseForCreateMemberAcWithLogin@6e2eef]" name="navigateToAccountPage" duration-ms="6077" started-at="2016-01-22T15:47:56Z" finished-at="2016-01-22T15:48:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToAccountPage -->
+        <test-method status="PASS" signature="enterBlankDataIntoMemberAc()[pri:0, instance:testCase.TestCaseForCreateMemberAcWithLogin@6e2eef]" name="enterBlankDataIntoMemberAc" duration-ms="1911" started-at="2016-01-22T15:48:02Z" finished-at="2016-01-22T15:48:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterBlankDataIntoMemberAc -->
+        <test-method status="PASS" signature="enterInvalidSsn()[pri:0, instance:testCase.TestCaseForCreateMemberAcWithLogin@6e2eef]" name="enterInvalidSsn" duration-ms="4618" started-at="2016-01-22T15:48:04Z" finished-at="2016-01-22T15:48:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterInvalidSsn -->
+        <test-method status="PASS" signature="enterInvalidDate()[pri:0, instance:testCase.TestCaseForCreateMemberAcWithLogin@6e2eef]" name="enterInvalidDate" duration-ms="5895" started-at="2016-01-22T15:48:09Z" finished-at="2016-01-22T15:48:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterInvalidDate -->
+        <test-method status="PASS" signature="enterInvalidEmail()[pri:0, instance:testCase.TestCaseForCreateMemberAcWithLogin@6e2eef]" name="enterInvalidEmail" duration-ms="5584" started-at="2016-01-22T15:48:15Z" finished-at="2016-01-22T15:48:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterInvalidEmail -->
+        <test-method status="PASS" signature="createAMemberAcWithValidData()[pri:0, instance:testCase.TestCaseForCreateMemberAcWithLogin@6e2eef]" name="createAMemberAcWithValidData" duration-ms="8480" started-at="2016-01-22T15:48:20Z" finished-at="2016-01-22T15:48:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createAMemberAcWithValidData -->
+      </class> <!-- testCase.TestCaseForCreateMemberAcWithLogin -->
+      <class name="testCase.TestCaseForCreateNonIndiviualProviderAc">
+        <test-method status="FAIL" signature="validLoginForNewAcCreate()[pri:0, instance:testCase.TestCaseForCreateNonIndiviualProviderAc@bbc1e0]" name="validLoginForNewAcCreate" duration-ms="30" started-at="2016-01-22T15:49:34Z" finished-at="2016-01-22T15:49:34Z">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+            <message>
+              <![CDATA[Unable to find element on closed window (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 12 milliseconds
+Build info: version: '2.48.2', revision: '41bccdd', time: '2015-10-09 19:55:52'
+System info: host: '01250LT2368', ip: '10.8.44.138', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_60'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, pageLoadStrategy=normal, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=11, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:14583/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=true, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: 38a2a201-c313-4787-b899-b712d1280ace
+*** Element info: {Using=id, value=username}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: Unable to find element on closed window (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 12 milliseconds
+Build info: version: '2.48.2', revision: '41bccdd', time: '2015-10-09 19:55:52'
+System info: host: '01250LT2368', ip: '10.8.44.138', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_60'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, pageLoadStrategy=normal, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=11, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:14583/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=true, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: 38a2a201-c313-4787-b899-b712d1280ace
+*** Element info: {Using=id, value=username}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:647)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:403)
+	at org.openqa.selenium.By$ById.findElement(By.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:345)
+	at utilities.AllMethod.useSendkeys(AllMethod.java:53)
+	at utilities.AllMethod.validLogin(AllMethod.java:38)
+	at testCase.TestCaseForCreateNonIndiviualProviderAc.validLoginForNewAcCreate(TestCaseForCreateNonIndiviualProviderAc.java:18)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:821)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:773)
+	at org.testng.TestRunner.run(TestRunner.java:623)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1185)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1110)
+	at org.testng.TestNG.run(TestNG.java:1018)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validLoginForNewAcCreate -->
-        <test-method status="FAIL" signature="blankSubmit()[pri:0, instance:testCase.TestCaseForCreateNonIndiviualProviderAc@bbc1e0]" name="blankSubmit" duration-ms="30248" started-at="2016-01-22T12:38:25Z" finished-at="2016-01-22T12:38:55Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method status="FAIL" signature="blankSubmit()[pri:0, instance:testCase.TestCaseForCreateNonIndiviualProviderAc@bbc1e0]" name="blankSubmit" duration-ms="33" started-at="2016-01-22T15:49:34Z" finished-at="2016-01-22T15:49:34Z">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
             <message>
-              <![CDATA[Unable to find element with xpath == .//*[@id='topButtonRow']/input[1] (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 30.24 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+              <![CDATA[Unable to find element on closed window (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 12 milliseconds
 Build info: version: '2.48.2', revision: '41bccdd', time: '2015-10-09 19:55:52'
 System info: host: '01250LT2368', ip: '10.8.44.138', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_60'
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, pageLoadStrategy=normal, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=11, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:17130/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=true, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
-Session ID: fefca2af-ef2a-489d-8701-0560d7b39084
+Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, pageLoadStrategy=normal, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=11, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:14583/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=true, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: 38a2a201-c313-4787-b899-b712d1280ace
 *** Element info: {Using=xpath, value=.//*[@id='topButtonRow']/input[1]}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to find element with xpath == .//*[@id='topButtonRow']/input[1] (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 30.24 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: Unable to find element on closed window (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 12 milliseconds
 Build info: version: '2.48.2', revision: '41bccdd', time: '2015-10-09 19:55:52'
 System info: host: '01250LT2368', ip: '10.8.44.138', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_60'
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, pageLoadStrategy=normal, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=11, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:17130/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=true, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
-Session ID: fefca2af-ef2a-489d-8701-0560d7b39084
+Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, pageLoadStrategy=normal, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=11, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:14583/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=true, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: 38a2a201-c313-4787-b899-b712d1280ace
 *** Element info: {Using=xpath, value=.//*[@id='topButtonRow']/input[1]}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
@@ -548,124 +644,124 @@ Session ID: fefca2af-ef2a-489d-8701-0560d7b39084
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- blankSubmit -->
       </class> <!-- testCase.TestCaseForCreateNonIndiviualProviderAc -->
     </test> <!-- Test2 -->
-    <test name="Test3" duration-ms="70657" started-at="2016-01-22T17:38:55Z" finished-at="2016-01-22T17:40:06Z">
+    <test name="Test3" duration-ms="90832" started-at="2016-01-22T20:49:34Z" finished-at="2016-01-22T20:51:05Z">
       <class name="testCase.TestCaseForLogin">
-        <test-method status="PASS" signature="reportIni()[pri:0, instance:testCase.TestCaseForLogin@11be3c5]" name="reportIni" is-config="true" duration-ms="163" started-at="2016-01-22T12:33:12Z" finished-at="2016-01-22T12:33:12Z">
+        <test-method status="PASS" signature="reportIni()[pri:0, instance:testCase.TestCaseForLogin@11be3c5]" name="reportIni" is-config="true" duration-ms="107" started-at="2016-01-22T15:45:45Z" finished-at="2016-01-22T15:45:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reportIni -->
-        <test-method status="PASS" signature="openBrowser(java.lang.String)[pri:0, instance:testCase.TestCaseForLogin@11be3c5]" name="openBrowser" is-config="true" duration-ms="8419" started-at="2016-01-22T12:38:55Z" finished-at="2016-01-22T12:39:04Z">
+        <test-method status="PASS" signature="openBrowser(java.lang.String)[pri:0, instance:testCase.TestCaseForLogin@11be3c5]" name="openBrowser" is-config="true" duration-ms="11155" started-at="2016-01-22T15:49:34Z" finished-at="2016-01-22T15:49:45Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[firefox]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="verifyInvalidIDBlank()[pri:0, instance:testCase.TestCaseForLogin@11be3c5]" name="verifyInvalidIDBlank" duration-ms="2856" started-at="2016-01-22T12:39:04Z" finished-at="2016-01-22T12:39:07Z">
+        <test-method status="PASS" signature="verifyInvalidIDBlank()[pri:0, instance:testCase.TestCaseForLogin@11be3c5]" name="verifyInvalidIDBlank" duration-ms="1201" started-at="2016-01-22T15:49:45Z" finished-at="2016-01-22T15:49:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyInvalidIDBlank -->
-        <test-method status="PASS" signature="verifyInvalidID()[pri:0, instance:testCase.TestCaseForLogin@11be3c5]" name="verifyInvalidID" duration-ms="2263" started-at="2016-01-22T12:39:07Z" finished-at="2016-01-22T12:39:09Z">
+        <test-method status="PASS" signature="verifyInvalidID()[pri:0, instance:testCase.TestCaseForLogin@11be3c5]" name="verifyInvalidID" duration-ms="926" started-at="2016-01-22T15:49:47Z" finished-at="2016-01-22T15:49:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyInvalidID -->
-        <test-method status="PASS" signature="verifyInvalidPassword()[pri:0, instance:testCase.TestCaseForLogin@11be3c5]" name="verifyInvalidPassword" duration-ms="2964" started-at="2016-01-22T12:39:09Z" finished-at="2016-01-22T12:39:12Z">
+        <test-method status="PASS" signature="verifyInvalidPassword()[pri:0, instance:testCase.TestCaseForLogin@11be3c5]" name="verifyInvalidPassword" duration-ms="1125" started-at="2016-01-22T15:49:48Z" finished-at="2016-01-22T15:49:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyInvalidPassword -->
-        <test-method status="PASS" signature="validLogin()[pri:0, instance:testCase.TestCaseForLogin@11be3c5]" name="validLogin" duration-ms="702" started-at="2016-01-22T12:39:12Z" finished-at="2016-01-22T12:39:13Z">
+        <test-method status="PASS" signature="validLogin()[pri:0, instance:testCase.TestCaseForLogin@11be3c5]" name="validLogin" duration-ms="598" started-at="2016-01-22T15:49:49Z" finished-at="2016-01-22T15:49:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validLogin -->
-        <test-method status="PASS" signature="verifyRemebarMeCheckBox()[pri:0, instance:testCase.TestCaseForLogin@11be3c5]" name="verifyRemebarMeCheckBox" duration-ms="965" started-at="2016-01-22T12:39:13Z" finished-at="2016-01-22T12:39:14Z">
+        <test-method status="PASS" signature="verifyRemebarMeCheckBox()[pri:0, instance:testCase.TestCaseForLogin@11be3c5]" name="verifyRemebarMeCheckBox" duration-ms="567" started-at="2016-01-22T15:49:49Z" finished-at="2016-01-22T15:49:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyRemebarMeCheckBox -->
-        <test-method status="PASS" signature="logIn()[pri:0, instance:testCase.TestCaseForLogin@11be3c5]" name="logIn" duration-ms="7435" started-at="2016-01-22T12:39:14Z" finished-at="2016-01-22T12:39:21Z">
+        <test-method status="PASS" signature="logIn()[pri:0, instance:testCase.TestCaseForLogin@11be3c5]" name="logIn" duration-ms="5944" started-at="2016-01-22T15:49:50Z" finished-at="2016-01-22T15:49:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logIn -->
-        <test-method status="PASS" signature="verifyTitle()[pri:0, instance:testCase.TestCaseForLogin@11be3c5]" name="verifyTitle" duration-ms="236" started-at="2016-01-22T12:39:21Z" finished-at="2016-01-22T12:39:21Z">
+        <test-method status="PASS" signature="verifyTitle()[pri:0, instance:testCase.TestCaseForLogin@11be3c5]" name="verifyTitle" duration-ms="223" started-at="2016-01-22T15:49:56Z" finished-at="2016-01-22T15:49:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyTitle -->
-        <test-method status="PASS" signature="logout()[pri:0, instance:testCase.TestCaseForLogin@11be3c5]" name="logout" duration-ms="498" started-at="2016-01-22T12:39:21Z" finished-at="2016-01-22T12:39:22Z">
+        <test-method status="PASS" signature="logout()[pri:0, instance:testCase.TestCaseForLogin@11be3c5]" name="logout" duration-ms="624" started-at="2016-01-22T15:49:56Z" finished-at="2016-01-22T15:49:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logout -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testCase.TestCaseForLogin@11be3c5]" name="tearDown" is-config="true" duration-ms="7283" started-at="2016-01-22T12:40:06Z" finished-at="2016-01-22T12:40:13Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testCase.TestCaseForLogin@11be3c5]" name="tearDown" is-config="true" duration-ms="11605" started-at="2016-01-22T15:51:05Z" finished-at="2016-01-22T15:51:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testCase.TestCaseForLogin -->
       <class name="testCase.TestCaseForCreateIndiviualProviderAc">
-        <test-method status="PASS" signature="validLoginForNewAcCreate()[pri:0, instance:testCase.TestCaseForCreateIndiviualProviderAc@135b478]" name="validLoginForNewAcCreate" duration-ms="8117" started-at="2016-01-22T12:39:38Z" finished-at="2016-01-22T12:39:46Z">
+        <test-method status="PASS" signature="validLoginForNewAcCreate()[pri:0, instance:testCase.TestCaseForCreateIndiviualProviderAc@135b478]" name="validLoginForNewAcCreate" duration-ms="17973" started-at="2016-01-22T15:50:23Z" finished-at="2016-01-22T15:50:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validLoginForNewAcCreate -->
-        <test-method status="PASS" signature="blankSubmit()[pri:0, instance:testCase.TestCaseForCreateIndiviualProviderAc@135b478]" name="blankSubmit" duration-ms="3388" started-at="2016-01-22T12:39:46Z" finished-at="2016-01-22T12:39:49Z">
+        <test-method status="PASS" signature="blankSubmit()[pri:0, instance:testCase.TestCaseForCreateIndiviualProviderAc@135b478]" name="blankSubmit" duration-ms="3251" started-at="2016-01-22T15:50:41Z" finished-at="2016-01-22T15:50:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- blankSubmit -->
-        <test-method status="PASS" signature="lastNameVerify()[pri:0, instance:testCase.TestCaseForCreateIndiviualProviderAc@135b478]" name="lastNameVerify" duration-ms="907" started-at="2016-01-22T12:39:49Z" finished-at="2016-01-22T12:39:50Z">
+        <test-method status="PASS" signature="lastNameVerify()[pri:0, instance:testCase.TestCaseForCreateIndiviualProviderAc@135b478]" name="lastNameVerify" duration-ms="1309" started-at="2016-01-22T15:50:44Z" finished-at="2016-01-22T15:50:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- lastNameVerify -->
-        <test-method status="PASS" signature="EmailVerify()[pri:0, instance:testCase.TestCaseForCreateIndiviualProviderAc@135b478]" name="EmailVerify" duration-ms="1018" started-at="2016-01-22T12:39:50Z" finished-at="2016-01-22T12:39:51Z">
+        <test-method status="PASS" signature="EmailVerify()[pri:0, instance:testCase.TestCaseForCreateIndiviualProviderAc@135b478]" name="EmailVerify" duration-ms="1402" started-at="2016-01-22T15:50:45Z" finished-at="2016-01-22T15:50:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- EmailVerify -->
-        <test-method status="PASS" signature="createANewAcc()[pri:0, instance:testCase.TestCaseForCreateIndiviualProviderAc@135b478]" name="createANewAcc" duration-ms="2249" started-at="2016-01-22T12:39:51Z" finished-at="2016-01-22T12:39:54Z">
+        <test-method status="PASS" signature="createANewAcc()[pri:0, instance:testCase.TestCaseForCreateIndiviualProviderAc@135b478]" name="createANewAcc" duration-ms="2870" started-at="2016-01-22T15:50:47Z" finished-at="2016-01-22T15:50:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createANewAcc -->
       </class> <!-- testCase.TestCaseForCreateIndiviualProviderAc -->
       <class name="testCase.TestCaseForCreateMemberAcWithLogin">
-        <test-method status="PASS" signature="loginIntoApplication()[pri:0, instance:testCase.TestCaseForCreateMemberAcWithLogin@af6cff]" name="loginIntoApplication" duration-ms="2133" started-at="2016-01-22T12:39:22Z" finished-at="2016-01-22T12:39:24Z">
+        <test-method status="PASS" signature="loginIntoApplication()[pri:0, instance:testCase.TestCaseForCreateMemberAcWithLogin@af6cff]" name="loginIntoApplication" duration-ms="2200" started-at="2016-01-22T15:49:57Z" finished-at="2016-01-22T15:49:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginIntoApplication -->
-        <test-method status="PASS" signature="navigateToAccountPage()[pri:0, instance:testCase.TestCaseForCreateMemberAcWithLogin@af6cff]" name="navigateToAccountPage" duration-ms="4726" started-at="2016-01-22T12:39:24Z" finished-at="2016-01-22T12:39:29Z">
+        <test-method status="PASS" signature="navigateToAccountPage()[pri:0, instance:testCase.TestCaseForCreateMemberAcWithLogin@af6cff]" name="navigateToAccountPage" duration-ms="13660" started-at="2016-01-22T15:49:59Z" finished-at="2016-01-22T15:50:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigateToAccountPage -->
-        <test-method status="PASS" signature="enterBlankDataIntoMemberAc()[pri:0, instance:testCase.TestCaseForCreateMemberAcWithLogin@af6cff]" name="enterBlankDataIntoMemberAc" duration-ms="1905" started-at="2016-01-22T12:39:29Z" finished-at="2016-01-22T12:39:31Z">
+        <test-method status="PASS" signature="enterBlankDataIntoMemberAc()[pri:0, instance:testCase.TestCaseForCreateMemberAcWithLogin@af6cff]" name="enterBlankDataIntoMemberAc" duration-ms="1580" started-at="2016-01-22T15:50:13Z" finished-at="2016-01-22T15:50:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- enterBlankDataIntoMemberAc -->
-        <test-method status="PASS" signature="enterInvalidSsn()[pri:0, instance:testCase.TestCaseForCreateMemberAcWithLogin@af6cff]" name="enterInvalidSsn" duration-ms="1455" started-at="2016-01-22T12:39:31Z" finished-at="2016-01-22T12:39:32Z">
+        <test-method status="PASS" signature="enterInvalidSsn()[pri:0, instance:testCase.TestCaseForCreateMemberAcWithLogin@af6cff]" name="enterInvalidSsn" duration-ms="1630" started-at="2016-01-22T15:50:14Z" finished-at="2016-01-22T15:50:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- enterInvalidSsn -->
-        <test-method status="PASS" signature="enterInvalidDate()[pri:0, instance:testCase.TestCaseForCreateMemberAcWithLogin@af6cff]" name="enterInvalidDate" duration-ms="1594" started-at="2016-01-22T12:39:32Z" finished-at="2016-01-22T12:39:34Z">
+        <test-method status="PASS" signature="enterInvalidDate()[pri:0, instance:testCase.TestCaseForCreateMemberAcWithLogin@af6cff]" name="enterInvalidDate" duration-ms="1807" started-at="2016-01-22T15:50:16Z" finished-at="2016-01-22T15:50:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- enterInvalidDate -->
-        <test-method status="PASS" signature="enterInvalidEmail()[pri:0, instance:testCase.TestCaseForCreateMemberAcWithLogin@af6cff]" name="enterInvalidEmail" duration-ms="1487" started-at="2016-01-22T12:39:34Z" finished-at="2016-01-22T12:39:35Z">
+        <test-method status="PASS" signature="enterInvalidEmail()[pri:0, instance:testCase.TestCaseForCreateMemberAcWithLogin@af6cff]" name="enterInvalidEmail" duration-ms="1881" started-at="2016-01-22T15:50:18Z" finished-at="2016-01-22T15:50:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- enterInvalidEmail -->
-        <test-method status="PASS" signature="createAMemberAcWithValidData()[pri:0, instance:testCase.TestCaseForCreateMemberAcWithLogin@af6cff]" name="createAMemberAcWithValidData" duration-ms="2890" started-at="2016-01-22T12:39:35Z" finished-at="2016-01-22T12:39:38Z">
+        <test-method status="PASS" signature="createAMemberAcWithValidData()[pri:0, instance:testCase.TestCaseForCreateMemberAcWithLogin@af6cff]" name="createAMemberAcWithValidData" duration-ms="3386" started-at="2016-01-22T15:50:19Z" finished-at="2016-01-22T15:50:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createAMemberAcWithValidData -->
       </class> <!-- testCase.TestCaseForCreateMemberAcWithLogin -->
       <class name="testCase.TestCaseForCreateNonIndiviualProviderAc">
-        <test-method status="PASS" signature="validLoginForNewAcCreate()[pri:0, instance:testCase.TestCaseForCreateNonIndiviualProviderAc@9f9fb0]" name="validLoginForNewAcCreate" duration-ms="8278" started-at="2016-01-22T12:39:54Z" finished-at="2016-01-22T12:40:02Z">
+        <test-method status="PASS" signature="validLoginForNewAcCreate()[pri:0, instance:testCase.TestCaseForCreateNonIndiviualProviderAc@9f9fb0]" name="validLoginForNewAcCreate" duration-ms="12460" started-at="2016-01-22T15:50:50Z" finished-at="2016-01-22T15:51:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validLoginForNewAcCreate -->
-        <test-method status="PASS" signature="blankSubmit()[pri:0, instance:testCase.TestCaseForCreateNonIndiviualProviderAc@9f9fb0]" name="blankSubmit" duration-ms="4150" started-at="2016-01-22T12:40:02Z" finished-at="2016-01-22T12:40:06Z">
+        <test-method status="PASS" signature="blankSubmit()[pri:0, instance:testCase.TestCaseForCreateNonIndiviualProviderAc@9f9fb0]" name="blankSubmit" duration-ms="3044" started-at="2016-01-22T15:51:02Z" finished-at="2016-01-22T15:51:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- blankSubmit -->

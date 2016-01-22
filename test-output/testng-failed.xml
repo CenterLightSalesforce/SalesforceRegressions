@@ -1,28 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <parameter name="browser" value="chrome"/>
-  <test name="Test1(failed)">
-    <parameter name="browser" value="firefox"/>
-    <classes>
-      <class name="testCase.TestCaseForLogin">
-        <methods>
-          <include name="tearDown"/>
-          <include name="openBrowser"/>
-          <include name="openBrowser"/>
-          <include name="openBrowser"/>
-          <include name="reportIni"/>
-        </methods>
-      </class> <!-- testCase.TestCaseForLogin -->
-      <class name="testCase.TestCaseForCreateIndiviualProviderAc">
-        <methods>
-          <include name="lastNameVerify"/>
-          <include name="validLoginForNewAcCreate"/>
-          <include name="blankSubmit"/>
-        </methods>
-      </class> <!-- testCase.TestCaseForCreateIndiviualProviderAc -->
-    </classes>
-  </test> <!-- Test1(failed) -->
+  <parameter name="browser" value="firefox"/>
   <test name="Test2(failed)">
     <parameter name="browser" value="IE"/>
     <classes>
@@ -41,6 +20,15 @@
           <include name="reportIni"/>
         </methods>
       </class> <!-- testCase.TestCaseForLogin -->
+      <class name="testCase.TestCaseForCreateIndiviualProviderAc">
+        <methods>
+          <include name="lastNameVerify"/>
+          <include name="createANewAcc"/>
+          <include name="validLoginForNewAcCreate"/>
+          <include name="blankSubmit"/>
+          <include name="EmailVerify"/>
+        </methods>
+      </class> <!-- testCase.TestCaseForCreateIndiviualProviderAc -->
     </classes>
   </test> <!-- Test2(failed) -->
 </suite> <!-- Failed suite [Suite] -->
