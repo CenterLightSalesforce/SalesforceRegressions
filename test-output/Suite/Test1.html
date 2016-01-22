@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test1</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>21/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>19/3/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Jan 21 15:40:38 EST 2016</td>
+<td>Started on:</td><td>Fri Jan 22 12:33:12 EST 2016</td>
 </tr>
-<tr><td>Total time:</td><td>120 seconds (120738 ms)</td>
+<tr><td>Total time:</td><td>164 seconds (164906 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,41 +75,55 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testCase.TestCaseForCreateNonIndiviualProviderAc.blankSubmit()'><b>blankSubmit</b><br>Test class: testCase.TestCaseForCreateNonIndiviualProviderAc</td>
-<td><div><pre>java.lang.RuntimeException: Process refused to die after 10 seconds, and couldn&apos;t taskkill it: Unable to find executable for: taskkill
-	at org.openqa.selenium.os.ProcessUtils.killWinProcess(ProcessUtils.java:142)
-	at org.openqa.selenium.os.ProcessUtils.killProcess(ProcessUtils.java:81)
-	at org.openqa.selenium.os.UnixProcess$SeleniumWatchDog.destroyHarder(UnixProcess.java:247)
-	at org.openqa.selenium.os.UnixProcess$SeleniumWatchDog.access$2(UnixProcess.java:246)
-	at org.openqa.selenium.os.UnixProcess.destroy(UnixProcess.java:125)
-	at org.openqa.selenium.os.CommandLine.destroy(CommandLine.java:155)
-	at org.openqa.selenium.firefox.FirefoxBinary.quit(FirefoxBinary.java:259)
-	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.quit(NewProfileExtensionConnection.java:204)
-	at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.quit(FirefoxDriver.java:364)
-	at org.openqa.selenium.firefox.FirefoxDriver.stopClient(FirefoxDriver.java:310)
-	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:519)
-	at testCase.TestCaseForCreateNonIndiviualProviderAc.blankSubmit(TestCaseForCreateNonIndiviualProviderAc.java:48)
-Caused by: java.lang.NullPointerException: Unable to find executable for: taskkill
-	at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:250)
-	at org.openqa.selenium.os.UnixProcess.&lt;init&gt;(UnixProcess.java:62)
-	at org.openqa.selenium.os.CommandLine.&lt;init&gt;(CommandLine.java:38)
-	at org.openqa.selenium.os.WindowsUtils.killPID(WindowsUtils.java:178)
-	at org.openqa.selenium.os.ProcessUtils.killWinProcess(ProcessUtils.java:138)
-	... 35 more
-... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace33397325", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace33397325'><pre>java.lang.RuntimeException: Process refused to die after 10 seconds, and couldn&apos;t taskkill it: Unable to find executable for: taskkill
-	at org.openqa.selenium.os.ProcessUtils.killWinProcess(ProcessUtils.java:142)
-	at org.openqa.selenium.os.ProcessUtils.killProcess(ProcessUtils.java:81)
-	at org.openqa.selenium.os.UnixProcess$SeleniumWatchDog.destroyHarder(UnixProcess.java:247)
-	at org.openqa.selenium.os.UnixProcess$SeleniumWatchDog.access$2(UnixProcess.java:246)
-	at org.openqa.selenium.os.UnixProcess.destroy(UnixProcess.java:125)
-	at org.openqa.selenium.os.CommandLine.destroy(CommandLine.java:155)
-	at org.openqa.selenium.firefox.FirefoxBinary.quit(FirefoxBinary.java:259)
-	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.quit(NewProfileExtensionConnection.java:204)
-	at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.quit(FirefoxDriver.java:364)
-	at org.openqa.selenium.firefox.FirefoxDriver.stopClient(FirefoxDriver.java:310)
-	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:519)
-	at testCase.TestCaseForCreateNonIndiviualProviderAc.blankSubmit(TestCaseForCreateNonIndiviualProviderAc.java:48)
+<td title='testCase.TestCaseForCreateIndiviualProviderAc.blankSubmit()'><b>blankSubmit</b><br>Test class: testCase.TestCaseForCreateIndiviualProviderAc</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//*[@id=&apos;topButtonRow&apos;]/input[1]&quot;}
+Command duration or timeout: 30.07 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.48.2&apos;, revision: &apos;41bccdd&apos;, time: &apos;2015-10-09 19:55:52&apos;
+System info: host: &apos;01250LT2368&apos;, ip: &apos;10.8.44.138&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_60&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=40.0.3, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 08efcc23-f822-417a-aab4-b62d15f84060
+*** Element info: {Using=xpath, value=.//*[@id=&apos;topButtonRow&apos;]/input[1]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:647)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:490)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:345)
+	at pageObject.CreateIndividualProviderAccount.clickSaveButton(CreateIndividualProviderAccount.java:73)
+	at testCase.TestCaseForCreateIndiviualProviderAc.blankSubmit(TestCaseForCreateIndiviualProviderAc.java:38)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//*[@id=&apos;topButtonRow&apos;]/input[1]&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.48.2&apos;, revision: &apos;41bccdd&apos;, time: &apos;2015-10-09 19:55:52&apos;
+System info: host: &apos;01250LT2368&apos;, ip: &apos;10.8.44.138&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_60&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/jakther/AppData/Local/Temp/anonymous8542792990824281469webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10659)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/jakther/AppData/Local/Temp/anonymous8542792990824281469webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:621)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace9601799", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace9601799'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//*[@id=&apos;topButtonRow&apos;]/input[1]&quot;}
+Command duration or timeout: 30.07 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.48.2&apos;, revision: &apos;41bccdd&apos;, time: &apos;2015-10-09 19:55:52&apos;
+System info: host: &apos;01250LT2368&apos;, ip: &apos;10.8.44.138&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_60&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=40.0.3, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 08efcc23-f822-417a-aab4-b62d15f84060
+*** Element info: {Using=xpath, value=.//*[@id=&apos;topButtonRow&apos;]/input[1]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:647)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:490)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:345)
+	at pageObject.CreateIndividualProviderAccount.clickSaveButton(CreateIndividualProviderAccount.java:73)
+	at testCase.TestCaseForCreateIndiviualProviderAc.blankSubmit(TestCaseForCreateIndiviualProviderAc.java:38)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -134,16 +148,184 @@ Caused by: java.lang.NullPointerException: Unable to find executable for: taskki
 	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-Caused by: java.lang.NullPointerException: Unable to find executable for: taskkill
-	at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:250)
-	at org.openqa.selenium.os.UnixProcess.&lt;init&gt;(UnixProcess.java:62)
-	at org.openqa.selenium.os.CommandLine.&lt;init&gt;(CommandLine.java:38)
-	at org.openqa.selenium.os.WindowsUtils.killPID(WindowsUtils.java:178)
-	at org.openqa.selenium.os.ProcessUtils.killWinProcess(ProcessUtils.java:138)
-	... 35 more
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//*[@id=&apos;topButtonRow&apos;]/input[1]&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.48.2&apos;, revision: &apos;41bccdd&apos;, time: &apos;2015-10-09 19:55:52&apos;
+System info: host: &apos;01250LT2368&apos;, ip: &apos;10.8.44.138&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_60&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/jakther/AppData/Local/Temp/anonymous8542792990824281469webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10659)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/jakther/AppData/Local/Temp/anonymous8542792990824281469webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:621)
 </pre></div></td>
-<td>3</td>
-<td>testCase.TestCaseForCreateNonIndiviualProviderAc@f9b8bc</td></tr>
+<td>30</td>
+<td>testCase.TestCaseForCreateIndiviualProviderAc@115b42e</td></tr>
+<tr>
+<td title='testCase.TestCaseForCreateIndiviualProviderAc.lastNameVerify()'><b>lastNameVerify</b><br>Test class: testCase.TestCaseForCreateIndiviualProviderAc</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;00NF000000ColTt&quot;}
+Command duration or timeout: 30.07 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.48.2&apos;, revision: &apos;41bccdd&apos;, time: &apos;2015-10-09 19:55:52&apos;
+System info: host: &apos;01250LT2368&apos;, ip: &apos;10.8.44.138&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_60&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=40.0.3, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 08efcc23-f822-417a-aab4-b62d15f84060
+*** Element info: {Using=id, value=00NF000000ColTt}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:647)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:403)
+	at org.openqa.selenium.By$ById.findElement(By.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:345)
+	at pageObject.CreateIndividualProviderAccount.enterTxtOnFirstName(CreateIndividualProviderAccount.java:109)
+	at testCase.TestCaseForCreateIndiviualProviderAc.lastNameVerify(TestCaseForCreateIndiviualProviderAc.java:57)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;00NF000000ColTt&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.48.2&apos;, revision: &apos;41bccdd&apos;, time: &apos;2015-10-09 19:55:52&apos;
+System info: host: &apos;01250LT2368&apos;, ip: &apos;10.8.44.138&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_60&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/jakther/AppData/Local/Temp/anonymous8542792990824281469webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10659)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/jakther/AppData/Local/Temp/anonymous8542792990824281469webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:621)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace621913", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace621913'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;00NF000000ColTt&quot;}
+Command duration or timeout: 30.07 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.48.2&apos;, revision: &apos;41bccdd&apos;, time: &apos;2015-10-09 19:55:52&apos;
+System info: host: &apos;01250LT2368&apos;, ip: &apos;10.8.44.138&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_60&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=40.0.3, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 08efcc23-f822-417a-aab4-b62d15f84060
+*** Element info: {Using=id, value=00NF000000ColTt}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:647)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:403)
+	at org.openqa.selenium.By$ById.findElement(By.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:345)
+	at pageObject.CreateIndividualProviderAccount.enterTxtOnFirstName(CreateIndividualProviderAccount.java:109)
+	at testCase.TestCaseForCreateIndiviualProviderAc.lastNameVerify(TestCaseForCreateIndiviualProviderAc.java:57)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:821)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:773)
+	at org.testng.TestRunner.run(TestRunner.java:623)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1185)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1110)
+	at org.testng.TestNG.run(TestNG.java:1018)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;00NF000000ColTt&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.48.2&apos;, revision: &apos;41bccdd&apos;, time: &apos;2015-10-09 19:55:52&apos;
+System info: host: &apos;01250LT2368&apos;, ip: &apos;10.8.44.138&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_60&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/jakther/AppData/Local/Temp/anonymous8542792990824281469webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10659)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/jakther/AppData/Local/Temp/anonymous8542792990824281469webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:621)
+</pre></div></td>
+<td>30</td>
+<td>testCase.TestCaseForCreateIndiviualProviderAc@115b42e</td></tr>
+<tr>
+<td title='testCase.TestCaseForCreateIndiviualProviderAc.validLoginForNewAcCreate()'><b>validLoginForNewAcCreate</b><br>Test class: testCase.TestCaseForCreateIndiviualProviderAc</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//*[@id=&apos;hotlist&apos;]/table/tbody/tr/td[2]/input&quot;}
+Command duration or timeout: 30.11 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.48.2&apos;, revision: &apos;41bccdd&apos;, time: &apos;2015-10-09 19:55:52&apos;
+System info: host: &apos;01250LT2368&apos;, ip: &apos;10.8.44.138&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_60&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=40.0.3, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 08efcc23-f822-417a-aab4-b62d15f84060
+*** Element info: {Using=xpath, value=.//*[@id=&apos;hotlist&apos;]/table/tbody/tr/td[2]/input}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:647)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:490)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:345)
+	at pageObject.NavigateToOtherPage.navigateToAccountCreatePage(NavigateToOtherPage.java:37)
+	at testCase.TestCaseForCreateIndiviualProviderAc.validLoginForNewAcCreate(TestCaseForCreateIndiviualProviderAc.java:25)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//*[@id=&apos;hotlist&apos;]/table/tbody/tr/td[2]/input&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.48.2&apos;, revision: &apos;41bccdd&apos;, time: &apos;2015-10-09 19:55:52&apos;
+System info: host: &apos;01250LT2368&apos;, ip: &apos;10.8.44.138&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_60&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/jakther/AppData/Local/Temp/anonymous8542792990824281469webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10659)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/jakther/AppData/Local/Temp/anonymous8542792990824281469webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:621)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace13226198", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace13226198'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//*[@id=&apos;hotlist&apos;]/table/tbody/tr/td[2]/input&quot;}
+Command duration or timeout: 30.11 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.48.2&apos;, revision: &apos;41bccdd&apos;, time: &apos;2015-10-09 19:55:52&apos;
+System info: host: &apos;01250LT2368&apos;, ip: &apos;10.8.44.138&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_60&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=40.0.3, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 08efcc23-f822-417a-aab4-b62d15f84060
+*** Element info: {Using=xpath, value=.//*[@id=&apos;hotlist&apos;]/table/tbody/tr/td[2]/input}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:647)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:490)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:345)
+	at pageObject.NavigateToOtherPage.navigateToAccountCreatePage(NavigateToOtherPage.java:37)
+	at testCase.TestCaseForCreateIndiviualProviderAc.validLoginForNewAcCreate(TestCaseForCreateIndiviualProviderAc.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:821)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:773)
+	at org.testng.TestRunner.run(TestRunner.java:623)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1185)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1110)
+	at org.testng.TestNG.run(TestNG.java:1018)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//*[@id=&apos;hotlist&apos;]/table/tbody/tr/td[2]/input&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.48.2&apos;, revision: &apos;41bccdd&apos;, time: &apos;2015-10-09 19:55:52&apos;
+System info: host: &apos;01250LT2368&apos;, ip: &apos;10.8.44.138&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_60&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/jakther/AppData/Local/Temp/anonymous8542792990824281469webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10659)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/jakther/AppData/Local/Temp/anonymous8542792990824281469webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:621)
+</pre></div></td>
+<td>33</td>
+<td>testCase.TestCaseForCreateIndiviualProviderAc@115b42e</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -155,13 +337,13 @@ Caused by: java.lang.NullPointerException: Unable to find executable for: taskki
 <tr>
 <td title='testCase.TestCaseForCreateIndiviualProviderAc.EmailVerify()'><b>EmailVerify</b><br>Test class: testCase.TestCaseForCreateIndiviualProviderAc</td>
 <td></td>
-<td>1</td>
+<td>16</td>
 <td>testCase.TestCaseForCreateIndiviualProviderAc@115b42e</td></tr>
 <tr>
-<td title='testCase.TestCaseForCreateIndiviualProviderAc.blankSubmit()'><b>blankSubmit</b><br>Test class: testCase.TestCaseForCreateIndiviualProviderAc</td>
+<td title='testCase.TestCaseForCreateNonIndiviualProviderAc.blankSubmit()'><b>blankSubmit</b><br>Test class: testCase.TestCaseForCreateNonIndiviualProviderAc</td>
 <td></td>
 <td>3</td>
-<td>testCase.TestCaseForCreateIndiviualProviderAc@115b42e</td></tr>
+<td>testCase.TestCaseForCreateNonIndiviualProviderAc@f9b8bc</td></tr>
 <tr>
 <td title='testCase.TestCaseForCreateMemberAcWithLogin.createAMemberAcWithValidData()'><b>createAMemberAcWithValidData</b><br>Test class: testCase.TestCaseForCreateMemberAcWithLogin</td>
 <td></td>
@@ -170,12 +352,12 @@ Caused by: java.lang.NullPointerException: Unable to find executable for: taskki
 <tr>
 <td title='testCase.TestCaseForCreateIndiviualProviderAc.createANewAcc()'><b>createANewAcc</b><br>Test class: testCase.TestCaseForCreateIndiviualProviderAc</td>
 <td></td>
-<td>5</td>
+<td>2</td>
 <td>testCase.TestCaseForCreateIndiviualProviderAc@115b42e</td></tr>
 <tr>
 <td title='testCase.TestCaseForCreateMemberAcWithLogin.enterBlankDataIntoMemberAc()'><b>enterBlankDataIntoMemberAc</b><br>Test class: testCase.TestCaseForCreateMemberAcWithLogin</td>
 <td></td>
-<td>1</td>
+<td>2</td>
 <td>testCase.TestCaseForCreateMemberAcWithLogin@43840</td></tr>
 <tr>
 <td title='testCase.TestCaseForCreateMemberAcWithLogin.enterInvalidDate()'><b>enterInvalidDate</b><br>Test class: testCase.TestCaseForCreateMemberAcWithLogin</td>
@@ -193,11 +375,6 @@ Caused by: java.lang.NullPointerException: Unable to find executable for: taskki
 <td>1</td>
 <td>testCase.TestCaseForCreateMemberAcWithLogin@43840</td></tr>
 <tr>
-<td title='testCase.TestCaseForCreateIndiviualProviderAc.lastNameVerify()'><b>lastNameVerify</b><br>Test class: testCase.TestCaseForCreateIndiviualProviderAc</td>
-<td></td>
-<td>1</td>
-<td>testCase.TestCaseForCreateIndiviualProviderAc@115b42e</td></tr>
-<tr>
 <td title='testCase.TestCaseForLogin.logIn()'><b>logIn</b><br>Test class: testCase.TestCaseForLogin</td>
 <td></td>
 <td>6</td>
@@ -205,7 +382,7 @@ Caused by: java.lang.NullPointerException: Unable to find executable for: taskki
 <tr>
 <td title='testCase.TestCaseForCreateMemberAcWithLogin.loginIntoApplication()'><b>loginIntoApplication</b><br>Test class: testCase.TestCaseForCreateMemberAcWithLogin</td>
 <td></td>
-<td>2</td>
+<td>1</td>
 <td>testCase.TestCaseForCreateMemberAcWithLogin@43840</td></tr>
 <tr>
 <td title='testCase.TestCaseForLogin.logout()'><b>logout</b><br>Test class: testCase.TestCaseForLogin</td>
@@ -215,7 +392,7 @@ Caused by: java.lang.NullPointerException: Unable to find executable for: taskki
 <tr>
 <td title='testCase.TestCaseForCreateMemberAcWithLogin.navigateToAccountPage()'><b>navigateToAccountPage</b><br>Test class: testCase.TestCaseForCreateMemberAcWithLogin</td>
 <td></td>
-<td>34</td>
+<td>5</td>
 <td>testCase.TestCaseForCreateMemberAcWithLogin@43840</td></tr>
 <tr>
 <td title='testCase.TestCaseForLogin.validLogin()'><b>validLogin</b><br>Test class: testCase.TestCaseForLogin</td>
@@ -223,19 +400,14 @@ Caused by: java.lang.NullPointerException: Unable to find executable for: taskki
 <td>0</td>
 <td>testCase.TestCaseForLogin@1b6a447</td></tr>
 <tr>
-<td title='testCase.TestCaseForCreateIndiviualProviderAc.validLoginForNewAcCreate()'><b>validLoginForNewAcCreate</b><br>Test class: testCase.TestCaseForCreateIndiviualProviderAc</td>
-<td></td>
-<td>11</td>
-<td>testCase.TestCaseForCreateIndiviualProviderAc@115b42e</td></tr>
-<tr>
 <td title='testCase.TestCaseForCreateNonIndiviualProviderAc.validLoginForNewAcCreate()'><b>validLoginForNewAcCreate</b><br>Test class: testCase.TestCaseForCreateNonIndiviualProviderAc</td>
 <td></td>
-<td>23</td>
+<td>8</td>
 <td>testCase.TestCaseForCreateNonIndiviualProviderAc@f9b8bc</td></tr>
 <tr>
 <td title='testCase.TestCaseForLogin.verifyInvalidID()'><b>verifyInvalidID</b><br>Test class: testCase.TestCaseForLogin</td>
 <td></td>
-<td>1</td>
+<td>0</td>
 <td>testCase.TestCaseForLogin@1b6a447</td></tr>
 <tr>
 <td title='testCase.TestCaseForLogin.verifyInvalidIDBlank()'><b>verifyInvalidIDBlank</b><br>Test class: testCase.TestCaseForLogin</td>
@@ -250,7 +422,7 @@ Caused by: java.lang.NullPointerException: Unable to find executable for: taskki
 <tr>
 <td title='testCase.TestCaseForLogin.verifyRemebarMeCheckBox()'><b>verifyRemebarMeCheckBox</b><br>Test class: testCase.TestCaseForLogin</td>
 <td></td>
-<td>0</td>
+<td>1</td>
 <td>testCase.TestCaseForLogin@1b6a447</td></tr>
 <tr>
 <td title='testCase.TestCaseForLogin.verifyTitle()'><b>verifyTitle</b><br>Test class: testCase.TestCaseForLogin</td>

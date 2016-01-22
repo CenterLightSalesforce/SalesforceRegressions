@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test2</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>21/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>20/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Jan 20 15:07:43 EST 2016</td>
+<td>Started on:</td><td>Fri Jan 22 12:35:57 EST 2016</td>
 </tr>
-<tr><td>Total time:</td><td>123 seconds (123719 ms)</td>
+<tr><td>Total time:</td><td>178 seconds (178113 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,41 +76,47 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='testCase.TestCaseForCreateNonIndiviualProviderAc.blankSubmit()'><b>blankSubmit</b><br>Test class: testCase.TestCaseForCreateNonIndiviualProviderAc</td>
-<td><div><pre>org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to find element with xpath == .//*[@id=&apos;topButtonRow&apos;]/input[1] (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 30.24 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;2.48.2&apos;, revision: &apos;41bccdd&apos;, time: &apos;2015-10-09 19:55:52&apos;
 System info: host: &apos;01250LT2368&apos;, ip: &apos;10.8.44.138&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_60&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:641)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:670)
-	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:516)
-	at testCase.TestCaseForCreateNonIndiviualProviderAc.blankSubmit(TestCaseForCreateNonIndiviualProviderAc.java:48)
-Caused by: java.lang.RuntimeException: Process refused to die after 10 seconds, and couldn&apos;t taskkill it: Unable to find executable for: taskkill
-	at org.openqa.selenium.os.ProcessUtils.killWinProcess(ProcessUtils.java:142)
-	at org.openqa.selenium.os.ProcessUtils.killProcess(ProcessUtils.java:81)
-	at org.openqa.selenium.os.UnixProcess$SeleniumWatchDog.destroyHarder(UnixProcess.java:247)
-	at org.openqa.selenium.os.UnixProcess$SeleniumWatchDog.access$2(UnixProcess.java:246)
-	at org.openqa.selenium.os.UnixProcess.destroy(UnixProcess.java:125)
-	at org.openqa.selenium.os.CommandLine.destroy(CommandLine.java:155)
-	at org.openqa.selenium.remote.service.DriverService.stop(DriverService.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:94)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:620)
-	... 27 more
-Caused by: java.lang.NullPointerException: Unable to find executable for: taskkill
-	at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:250)
-	at org.openqa.selenium.os.UnixProcess.&lt;init&gt;(UnixProcess.java:62)
-	at org.openqa.selenium.os.CommandLine.&lt;init&gt;(CommandLine.java:38)
-	at org.openqa.selenium.os.WindowsUtils.killPID(WindowsUtils.java:178)
-	at org.openqa.selenium.os.ProcessUtils.killWinProcess(ProcessUtils.java:138)
-	... 35 more
-... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace25363906", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace25363906'><pre>org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, pageLoadStrategy=normal, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=11, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:17130/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=true, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: fefca2af-ef2a-489d-8701-0560d7b39084
+*** Element info: {Using=xpath, value=.//*[@id=&apos;topButtonRow&apos;]/input[1]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:647)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:490)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:345)
+	at pageObject.CreateNonIndividualProvider.clickSaveButton(CreateNonIndividualProvider.java:75)
+	at testCase.TestCaseForCreateNonIndiviualProviderAc.blankSubmit(TestCaseForCreateNonIndiviualProviderAc.java:34)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace20686693", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace20686693'><pre>org.openqa.selenium.NoSuchElementException: Unable to find element with xpath == .//*[@id=&apos;topButtonRow&apos;]/input[1] (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 30.24 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;2.48.2&apos;, revision: &apos;41bccdd&apos;, time: &apos;2015-10-09 19:55:52&apos;
 System info: host: &apos;01250LT2368&apos;, ip: &apos;10.8.44.138&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_60&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:641)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:670)
-	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:516)
-	at testCase.TestCaseForCreateNonIndiviualProviderAc.blankSubmit(TestCaseForCreateNonIndiviualProviderAc.java:48)
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, pageLoadStrategy=normal, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=11, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:17130/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=true, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: fefca2af-ef2a-489d-8701-0560d7b39084
+*** Element info: {Using=xpath, value=.//*[@id=&apos;topButtonRow&apos;]/input[1]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:647)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:490)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:345)
+	at pageObject.CreateNonIndividualProvider.clickSaveButton(CreateNonIndividualProvider.java:75)
+	at testCase.TestCaseForCreateNonIndiviualProviderAc.blankSubmit(TestCaseForCreateNonIndiviualProviderAc.java:34)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -135,26 +141,78 @@ Driver info: driver.version: RemoteWebDriver
 	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-Caused by: java.lang.RuntimeException: Process refused to die after 10 seconds, and couldn&apos;t taskkill it: Unable to find executable for: taskkill
-	at org.openqa.selenium.os.ProcessUtils.killWinProcess(ProcessUtils.java:142)
-	at org.openqa.selenium.os.ProcessUtils.killProcess(ProcessUtils.java:81)
-	at org.openqa.selenium.os.UnixProcess$SeleniumWatchDog.destroyHarder(UnixProcess.java:247)
-	at org.openqa.selenium.os.UnixProcess$SeleniumWatchDog.access$2(UnixProcess.java:246)
-	at org.openqa.selenium.os.UnixProcess.destroy(UnixProcess.java:125)
-	at org.openqa.selenium.os.CommandLine.destroy(CommandLine.java:155)
-	at org.openqa.selenium.remote.service.DriverService.stop(DriverService.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:94)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:620)
-	... 27 more
-Caused by: java.lang.NullPointerException: Unable to find executable for: taskkill
-	at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:250)
-	at org.openqa.selenium.os.UnixProcess.&lt;init&gt;(UnixProcess.java:62)
-	at org.openqa.selenium.os.CommandLine.&lt;init&gt;(CommandLine.java:38)
-	at org.openqa.selenium.os.WindowsUtils.killPID(WindowsUtils.java:178)
-	at org.openqa.selenium.os.ProcessUtils.killWinProcess(ProcessUtils.java:138)
-	... 35 more
 </pre></div></td>
-<td>4</td>
+<td>30</td>
+<td>testCase.TestCaseForCreateNonIndiviualProviderAc@bbc1e0</td></tr>
+<tr>
+<td title='testCase.TestCaseForCreateNonIndiviualProviderAc.validLoginForNewAcCreate()'><b>validLoginForNewAcCreate</b><br>Test class: testCase.TestCaseForCreateNonIndiviualProviderAc</td>
+<td><div><pre>org.openqa.selenium.InvalidSelectorException: The xpath expression &apos;.//*[@id=&apos;Account_Tab&apos;]/a&apos; cannot be evaluated or does notresult in a WebElement (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 2.38 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: &apos;2.48.2&apos;, revision: &apos;41bccdd&apos;, time: &apos;2015-10-09 19:55:52&apos;
+System info: host: &apos;01250LT2368&apos;, ip: &apos;10.8.44.138&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_60&apos;
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, pageLoadStrategy=normal, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=11, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:17130/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=true, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: fefca2af-ef2a-489d-8701-0560d7b39084
+*** Element info: {Using=xpath, value=.//*[@id=&apos;Account_Tab&apos;]/a}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:647)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:490)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:345)
+	at pageObject.NavigateToOtherPage.navigateToAccountCreatePage(NavigateToOtherPage.java:35)
+	at testCase.TestCaseForCreateNonIndiviualProviderAc.validLoginForNewAcCreate(TestCaseForCreateNonIndiviualProviderAc.java:20)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace13554827", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace13554827'><pre>org.openqa.selenium.InvalidSelectorException: The xpath expression &apos;.//*[@id=&apos;Account_Tab&apos;]/a&apos; cannot be evaluated or does notresult in a WebElement (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 2.38 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: &apos;2.48.2&apos;, revision: &apos;41bccdd&apos;, time: &apos;2015-10-09 19:55:52&apos;
+System info: host: &apos;01250LT2368&apos;, ip: &apos;10.8.44.138&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_60&apos;
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, pageLoadStrategy=normal, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=11, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:17130/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=true, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: fefca2af-ef2a-489d-8701-0560d7b39084
+*** Element info: {Using=xpath, value=.//*[@id=&apos;Account_Tab&apos;]/a}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:647)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:490)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:345)
+	at pageObject.NavigateToOtherPage.navigateToAccountCreatePage(NavigateToOtherPage.java:35)
+	at testCase.TestCaseForCreateNonIndiviualProviderAc.validLoginForNewAcCreate(TestCaseForCreateNonIndiviualProviderAc.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:821)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:773)
+	at org.testng.TestRunner.run(TestRunner.java:623)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1185)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1110)
+	at org.testng.TestNG.run(TestNG.java:1018)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+</pre></div></td>
+<td>5</td>
 <td>testCase.TestCaseForCreateNonIndiviualProviderAc@bbc1e0</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
@@ -167,7 +225,7 @@ Caused by: java.lang.NullPointerException: Unable to find executable for: taskki
 <tr>
 <td title='testCase.TestCaseForCreateIndiviualProviderAc.EmailVerify()'><b>EmailVerify</b><br>Test class: testCase.TestCaseForCreateIndiviualProviderAc</td>
 <td></td>
-<td>3</td>
+<td>6</td>
 <td>testCase.TestCaseForCreateIndiviualProviderAc@1f97b55</td></tr>
 <tr>
 <td title='testCase.TestCaseForCreateIndiviualProviderAc.blankSubmit()'><b>blankSubmit</b><br>Test class: testCase.TestCaseForCreateIndiviualProviderAc</td>
@@ -177,37 +235,37 @@ Caused by: java.lang.NullPointerException: Unable to find executable for: taskki
 <tr>
 <td title='testCase.TestCaseForCreateMemberAcWithLogin.createAMemberAcWithValidData()'><b>createAMemberAcWithValidData</b><br>Test class: testCase.TestCaseForCreateMemberAcWithLogin</td>
 <td></td>
-<td>7</td>
+<td>12</td>
 <td>testCase.TestCaseForCreateMemberAcWithLogin@6e2eef</td></tr>
 <tr>
 <td title='testCase.TestCaseForCreateIndiviualProviderAc.createANewAcc()'><b>createANewAcc</b><br>Test class: testCase.TestCaseForCreateIndiviualProviderAc</td>
 <td></td>
-<td>6</td>
+<td>9</td>
 <td>testCase.TestCaseForCreateIndiviualProviderAc@1f97b55</td></tr>
 <tr>
 <td title='testCase.TestCaseForCreateMemberAcWithLogin.enterBlankDataIntoMemberAc()'><b>enterBlankDataIntoMemberAc</b><br>Test class: testCase.TestCaseForCreateMemberAcWithLogin</td>
 <td></td>
-<td>1</td>
+<td>2</td>
 <td>testCase.TestCaseForCreateMemberAcWithLogin@6e2eef</td></tr>
 <tr>
 <td title='testCase.TestCaseForCreateMemberAcWithLogin.enterInvalidDate()'><b>enterInvalidDate</b><br>Test class: testCase.TestCaseForCreateMemberAcWithLogin</td>
 <td></td>
-<td>5</td>
+<td>9</td>
 <td>testCase.TestCaseForCreateMemberAcWithLogin@6e2eef</td></tr>
 <tr>
 <td title='testCase.TestCaseForCreateMemberAcWithLogin.enterInvalidEmail()'><b>enterInvalidEmail</b><br>Test class: testCase.TestCaseForCreateMemberAcWithLogin</td>
 <td></td>
-<td>4</td>
+<td>9</td>
 <td>testCase.TestCaseForCreateMemberAcWithLogin@6e2eef</td></tr>
 <tr>
 <td title='testCase.TestCaseForCreateMemberAcWithLogin.enterInvalidSsn()'><b>enterInvalidSsn</b><br>Test class: testCase.TestCaseForCreateMemberAcWithLogin</td>
 <td></td>
-<td>3</td>
+<td>6</td>
 <td>testCase.TestCaseForCreateMemberAcWithLogin@6e2eef</td></tr>
 <tr>
 <td title='testCase.TestCaseForCreateIndiviualProviderAc.lastNameVerify()'><b>lastNameVerify</b><br>Test class: testCase.TestCaseForCreateIndiviualProviderAc</td>
 <td></td>
-<td>2</td>
+<td>4</td>
 <td>testCase.TestCaseForCreateIndiviualProviderAc@1f97b55</td></tr>
 <tr>
 <td title='testCase.TestCaseForLogin.logIn()'><b>logIn</b><br>Test class: testCase.TestCaseForLogin</td>
@@ -217,12 +275,12 @@ Caused by: java.lang.NullPointerException: Unable to find executable for: taskki
 <tr>
 <td title='testCase.TestCaseForCreateMemberAcWithLogin.loginIntoApplication()'><b>loginIntoApplication</b><br>Test class: testCase.TestCaseForCreateMemberAcWithLogin</td>
 <td></td>
-<td>6</td>
+<td>17</td>
 <td>testCase.TestCaseForCreateMemberAcWithLogin@6e2eef</td></tr>
 <tr>
 <td title='testCase.TestCaseForLogin.logout()'><b>logout</b><br>Test class: testCase.TestCaseForLogin</td>
 <td></td>
-<td>11</td>
+<td>10</td>
 <td>testCase.TestCaseForLogin@b7bfc0</td></tr>
 <tr>
 <td title='testCase.TestCaseForCreateMemberAcWithLogin.navigateToAccountPage()'><b>navigateToAccountPage</b><br>Test class: testCase.TestCaseForCreateMemberAcWithLogin</td>
@@ -232,22 +290,17 @@ Caused by: java.lang.NullPointerException: Unable to find executable for: taskki
 <tr>
 <td title='testCase.TestCaseForLogin.validLogin()'><b>validLogin</b><br>Test class: testCase.TestCaseForLogin</td>
 <td></td>
-<td>1</td>
+<td>3</td>
 <td>testCase.TestCaseForLogin@b7bfc0</td></tr>
 <tr>
 <td title='testCase.TestCaseForCreateIndiviualProviderAc.validLoginForNewAcCreate()'><b>validLoginForNewAcCreate</b><br>Test class: testCase.TestCaseForCreateIndiviualProviderAc</td>
 <td></td>
-<td>15</td>
+<td>13</td>
 <td>testCase.TestCaseForCreateIndiviualProviderAc@1f97b55</td></tr>
-<tr>
-<td title='testCase.TestCaseForCreateNonIndiviualProviderAc.validLoginForNewAcCreate()'><b>validLoginForNewAcCreate</b><br>Test class: testCase.TestCaseForCreateNonIndiviualProviderAc</td>
-<td></td>
-<td>15</td>
-<td>testCase.TestCaseForCreateNonIndiviualProviderAc@bbc1e0</td></tr>
 <tr>
 <td title='testCase.TestCaseForLogin.verifyInvalidID()'><b>verifyInvalidID</b><br>Test class: testCase.TestCaseForLogin</td>
 <td></td>
-<td>3</td>
+<td>4</td>
 <td>testCase.TestCaseForLogin@b7bfc0</td></tr>
 <tr>
 <td title='testCase.TestCaseForLogin.verifyInvalidIDBlank()'><b>verifyInvalidIDBlank</b><br>Test class: testCase.TestCaseForLogin</td>
@@ -257,12 +310,12 @@ Caused by: java.lang.NullPointerException: Unable to find executable for: taskki
 <tr>
 <td title='testCase.TestCaseForLogin.verifyInvalidPassword()'><b>verifyInvalidPassword</b><br>Test class: testCase.TestCaseForLogin</td>
 <td></td>
-<td>3</td>
+<td>5</td>
 <td>testCase.TestCaseForLogin@b7bfc0</td></tr>
 <tr>
 <td title='testCase.TestCaseForLogin.verifyRemebarMeCheckBox()'><b>verifyRemebarMeCheckBox</b><br>Test class: testCase.TestCaseForLogin</td>
 <td></td>
-<td>1</td>
+<td>2</td>
 <td>testCase.TestCaseForLogin@b7bfc0</td></tr>
 <tr>
 <td title='testCase.TestCaseForLogin.verifyTitle()'><b>verifyTitle</b><br>Test class: testCase.TestCaseForLogin</td>

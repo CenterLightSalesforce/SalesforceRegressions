@@ -70,14 +70,14 @@ public class StartUp {
 		
 	   extent.init(reportLocation + "Salesforce.html", true,
 				DisplayOrder.BY_OLDEST_TO_LATEST, GridType.STANDARD);
-		extent.config().documentTitle("Salesforce Test report in "+browserName +" Browser");
+		extent.config().documentTitle("Salesforce Test report in Browser");
 		extent.config()
 				.reportTitle(
-						"<h1><font color='#000099'>Salesforce Automation Test Result in "+ browserName+" browser</font></h1> <h4>1.Verify LogIn Screen(Positive,Negetive)</h4><h4>\n2.Member Account(Positive,Negetive).</h4><h4>\n2.Individual Provider Account(Positive,Negetive).</h4>");
+						"<h1><font color='#000099'>Salesforce Automation Test Result in  browser</font></h1> <h4>1.Verify LogIn Screen(Positive,Negetive)</h4><h4>\n2.Member Account(Positive,Negetive).</h4><h4>\n2.Individual Provider Account(Positive,Negetive).</h4>");
 		extent.config()
 				.reportHeadline(
 						"<b>Salesforce Selenium Automation Test Report.Develop By:JAHED AKTHER</b>");
-		extent.startTest("TC01.1", "Open The Browser");
+		extent.startTest("TC01.1", "Open The "+ browserName+" Browser");
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.navigate().to(url);
 		driver.manage().window().maximize();
@@ -94,7 +94,7 @@ public class StartUp {
 	@AfterSuite
 	public void tearDown() {
 		WebDriver driver1=new FirefoxDriver();
-		driver1.get("C:\\Users\\jakther\\Desktop\\jahed\\javawork\\Report\\salesforce.html");
+		driver1.get("C:\\Users\\jakther\\Desktop\\workplace\\Salesforce_Implementation\\Report\\salesforce.html");
 		driver1.manage().window().maximize();
 		//driver.quit();
 	}

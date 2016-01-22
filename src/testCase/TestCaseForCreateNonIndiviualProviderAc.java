@@ -45,7 +45,7 @@ public class TestCaseForCreateNonIndiviualProviderAc extends StartUp{
 		}
 				
 		extent.endTest();
-		driver.quit();
+		driver.close();
 			}
 /*	@Test(priority = 2)
 	public void lastNameVerify() throws Exception{

@@ -4,7 +4,7 @@
 
 
   <test name="Test1">
-  <parameter name="browser" value="firefox"/>
+  <parameter name="browser" value="chrome"/>
       <classes>
       <class name="testCase.TestCaseForLogin"/>
       <class name="testCase.TestCaseForCreateMemberAcWithLogin"/>
@@ -27,7 +27,7 @@
   </test> <!-- Test -->
   
   <test name="Test3">
-   <parameter name="browser" value="chrome"/>
+   <parameter name="browser" value="firefox"/>
      <classes>
       <class name="testCase.TestCaseForLogin"/>
       <class name="testCase.TestCaseForCreateMemberAcWithLogin"/>
